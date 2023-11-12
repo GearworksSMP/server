@@ -44,6 +44,9 @@ jobs:
       - name: copy kubejs
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/kubejs ./server/
 
+      - name: copy minecraft.sh
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/minecraft.sh ./server/
+
       - name: copy mods
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/mods ./server/
 
