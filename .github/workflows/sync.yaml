@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: "0 */4 * * *"
 jobs:
-  build-and-deploy:
+  sync:
     name: Download settings from server
     runs-on: ubuntu-latest
     env:
