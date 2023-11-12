@@ -1,0 +1,77 @@
+name: sync
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  push:
+    branches:
+      - main
+      - master
+jobs:
+  build-and-deploy:
+    name: Download settings from server
+    runs-on: ubuntu-latest
+    env:
+      CI_COMMIT_MESSAGE: settings sync
+      CI_COMMIT_AUTHOR: uberswe
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: unnecessary
+
+      - name: Adding Known Hosts
+        run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: copy configs
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/config ./server/
+
+      - name: copy crash reports
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/crash-reports ./server/
+
+      - name: copy banned ips
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-ips.json ./server/
+
+      - name: copy banned players
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-players.json ./server/
+
+      - name: copy default configs
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/defaultconfigs.json ./server/
+
+      - name: copy local
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/local ./server/
+
+      - name: copy kubejs
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/kubejs ./server/
+
+      - name: copy mods
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/mods ./server/
+
+      - name: copy run.sh
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/run.sh ./server/
+
+      - name: copy schematics
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/schematics ./server/
+
+      - name: copy server.properties
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/server.properties ./server/
+
+      - name: copy user_jvm_args.txt
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/user_jvm_args.txt ./server/
+
+      - name: copy whitelist.json
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/whitelist.json ./server/
+
+      - name: copy world settings
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/serverconfig ./server/uberswesCommunityEdition/
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "uberswe@users.noreply.github.com"
+          git add --all
+          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
+
