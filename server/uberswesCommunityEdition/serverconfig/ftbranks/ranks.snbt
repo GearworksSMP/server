@@ -1,0 +1,27 @@
+{
+	member: {
+		name: "Member"
+		power: 1
+		condition: "always_active"
+		ftbranks.name_format: "[MEMBER] {name}"
+	}
+	cogntrain: {
+		name: "CogsTrains"
+		power: 250
+		ftbranks.name_format: "[&4CT&r] {name}"
+		command.tp: true
+		command.gamemode: true
+	}
+	mod: {
+		name: "MOD"
+		power: 500
+		condition: "op"
+		ftbranks.name_format: "[&5MOD&r] {name}"
+	}
+	admin: {
+		name: "ADMIN"
+		power: 1000
+		condition: "op"
+		ftbranks.name_format: "[&3ADMIN&r] {name}"
+	}
+}
