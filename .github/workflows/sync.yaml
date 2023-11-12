@@ -13,8 +13,10 @@ jobs:
     env:
       CI_COMMIT_MESSAGE: settings sync
       CI_COMMIT_AUTHOR: uberswe
+      CI_COMMIT_EMAIL: uberswe@users.noreply.github.com
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout github repo
+        uses: actions/checkout@v3
 
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
@@ -67,11 +69,13 @@ jobs:
       - name: copy world settings
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/serverconfig ./server/uberswesCommunityEdition/
 
+      - name: set file permissions
+        run: sudo chown -R $(whoami) .
+
       - name: Commit changes
         run: |
-          sudo chown -R $(whoami) .
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "uberswe@users.noreply.github.com"
+          git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
           git add --all
           git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push
