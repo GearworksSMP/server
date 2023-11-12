@@ -38,7 +38,7 @@ jobs:
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-players.json ./server/
 
       - name: copy default configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/defaultconfigs./server/
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/defaultconfigs ./server/
 
       - name: copy local
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/local ./server/
