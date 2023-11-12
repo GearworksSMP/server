@@ -74,8 +74,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
-          git add --all
-          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
+          sudo git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          sudo git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
+          sudo git add --all
+          sudo git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          sudo git push
