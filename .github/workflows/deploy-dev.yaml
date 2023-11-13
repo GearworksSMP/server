@@ -1,0 +1,71 @@
+name: deploy
+on:
+  push:
+    branches:
+      - development
+jobs:
+  deploy:
+    name: Deploy all settings and mods and restart server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout github repo
+        uses: actions/checkout@v3
+
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: unnecessary
+
+      - name: Adding Known Hosts
+        run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: deploy configs
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config --delete
+
+      - name: copy banned ips
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-ips.json
+
+      - name: copy banned players
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-players.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-players.json
+
+      - name: copy default configs
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/defaultconfigs --delete
+
+      - name: copy local
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/local
+
+      - name: copy kubejs
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/kubejs
+
+      - name: copy minecraft.sh
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/minecraft.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/minecraft.sh
+
+      - name: copy mods
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/mods --delete
+
+      - name: copy run.sh
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/run.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/run.sh
+
+      - name: copy server.properties
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/server.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/server.properties
+
+      - name: copy user_jvm_args.txt
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/user_jvm_args.txt ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/user_jvm_args.txt
+
+      - name: copy whitelist.json
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/whitelist.json
+
+      - name: copy world settings
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/uberswesCommunityEdition/serverconfig --delete
+
+      - name: Restart Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /community-development/
+            ./minecraft.sh start
