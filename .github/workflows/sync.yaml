@@ -1,7 +1,7 @@
 name: sync
 on:
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 */6 * * *"
 jobs:
   sync:
     name: Download settings from server
