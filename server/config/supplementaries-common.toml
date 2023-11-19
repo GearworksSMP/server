@@ -516,7 +516,7 @@
 	[tweaks.map_tweaks]
 		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
 		#Best kept disabled if you are adding custom adventurer maps with datapack (check the wiki for more)
-		random_adventurer_maps = true
+		random_adventurer_maps = false
 		#Enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
 		block_map_markers = true
 		#If Quark is installed adventurer maps will be replaced by adventurer quills. These will not lag the server when generating
