@@ -8,7 +8,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["01820663F9AE7E0D"]
 			id: "182409AA749EB3B4"
 			tasks: [{
 				dimension: "minecraft:overworld"
@@ -32,7 +31,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["01820663F9AE7E0D"]
 			id: "41C882545D92E1B6"
 			subtitle: "South of spawn, there are some old shops still here."
 			tasks: [{
@@ -57,7 +55,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["01820663F9AE7E0D"]
 			id: "5D3B5E11E9064E82"
 			subtitle: "To the east of spawn, take a train here to get to other regions on the server."
 			tasks: [{
@@ -82,7 +79,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["01820663F9AE7E0D"]
 			id: "73558B2C8D23ABD5"
 			subtitle: "West of spawn, most players have shops here."
 			tasks: [{
@@ -377,17 +373,6 @@
 			}]
 			x: 5.5d
 			y: 1.5d
-		}
-		{
-			id: "01820663F9AE7E0D"
-			tasks: [{
-				icon: "minecraft:lava_bucket"
-				id: "758D1C57C8E4DC8E"
-				title: "This should block"
-				type: "custom"
-			}]
-			x: -0.5d
-			y: -2.5d
 		}
 		{
 			dependencies: ["069269BBC2A2E41D"]
@@ -847,7 +832,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["01820663F9AE7E0D"]
 			id: "68C12D35E58684A2"
 			subtitle: "In the mountains just north of spawn."
 			tasks: [{
@@ -872,7 +856,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["01820663F9AE7E0D"]
 			id: "5BBF1241F6825782"
 			tasks: [{
 				dimension: "minecraft:overworld"
