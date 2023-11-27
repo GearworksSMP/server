@@ -628,9 +628,9 @@
 					2021
 				]
 				size: [I;
+					50
 					30
-					30
-					30
+					50
 				]
 				title: "Oxuruk"
 				type: "location"
@@ -935,7 +935,7 @@
 				id: "0C32689F5E1A150E"
 				ignore_dimension: false
 				position: [I;
-					2050
+					1989
 					60
 					-620
 				]

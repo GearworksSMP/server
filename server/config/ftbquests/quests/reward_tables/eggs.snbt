@@ -80,6 +80,12 @@
 		{ item: "farmersdelight:egg_sandwich" }
 		{ item: "croptopia:eggplant" }
 		{ item: "croptopia:eggplant_parmesan" }
+		{
+			command: "/give @p minecraft:dragon_egg"
+			icon: "minecraft:dragon_head"
+			title: "Dragon Egg"
+			type: "command"
+		}
 	]
 	title: "Eggs"
 }
