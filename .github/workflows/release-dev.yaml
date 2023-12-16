@@ -21,17 +21,6 @@ jobs:
           echo "Got release version ${{ steps.release.outputs.version }}"
           echo "Upload release artifacts to ${{ steps.release.outputs.upload_url }}"
 
-      - uses: actions/checkout@v2
-
-      - name: Tag the repository
-        id: tag
-        run: |
-          echo "tag=${{ steps.release.outputs.tag_name }}" >> $GITHUB_OUTPUT
-          git config --global user.name "uberswe"
-          git config --global user.email "uberswe@users.noreply.github.com"
-          git tag -a ${{ steps.release.outputs.tag_name }} -m "Published version ${{ steps.release.outputs.tag_name }}" ${GITHUB_SHA}
-          git push origin ${{ steps.release.outputs.tag_name }}
-
       - name: Zip Folder
         run: zip -r curseforge_client_export_${{ steps.release.outputs.tag_name }}.zip ./client/
 
