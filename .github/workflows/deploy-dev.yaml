@@ -39,8 +39,8 @@ jobs:
       - name: deploy configs
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
-      - name: deploy configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/voicechat/voicechat-server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/voicechat/voicechat-server.properties
+      - name: deploy voice chat config
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/voicechat/voicechat-server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/voicechat/voicechat-server.properties
 
       - name: copy banned ips
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-ips.json
@@ -50,6 +50,9 @@ jobs:
 
       - name: copy default configs
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
+
+      - name: copy Discord-Integration.dev.toml
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/Discord-Integration.dev.toml ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/Discord-Integration.toml
 
       - name: copy local
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
@@ -67,7 +70,7 @@ jobs:
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/ops.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ops.json
 
       - name: copy server.properties
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/server.properties
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/server.properties
 
       - name: copy user_jvm_args.txt
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/user_jvm_args.txt ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/user_jvm_args.txt
