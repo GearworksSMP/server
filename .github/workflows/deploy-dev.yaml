@@ -32,6 +32,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /community-development/
+            chown -R root:root .
+            chmod +x ./minecraft.sh
             ./minecraft.sh stop
 
       - name: copy banned ips
@@ -86,6 +88,7 @@ jobs:
             cd /community-development/
             chown -R root:root .
             chmod +x ./minecraft.sh
+            sleep 10s
 
       - name: Start Server
         uses: appleboy/ssh-action@master
@@ -96,4 +99,6 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /community-development/
+            chown -R root:root .
+            chmod +x ./minecraft.sh
             ./minecraft.sh start
