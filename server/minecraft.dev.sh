@@ -70,7 +70,7 @@ LOGS_DAYS=7
 #   End of configuration
 
 
-if netstat -tulpn | grep -q ':25586'
+if netstat -tulpn | grep -q ':26685'
 then
         ONLINE=1
 else

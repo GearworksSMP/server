@@ -20,9 +20,6 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: deploy configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config --delete
-
       - name: Stop server
         uses: appleboy/ssh-action@master
         with:
@@ -35,6 +32,12 @@ jobs:
             chown -R root:root .
             chmod +x ./minecraft.sh
             ./minecraft.sh stop
+
+      - name: deploy configs
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config --delete
+
+      - name: deploy configs
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/voicechat/voicechat-server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/voicechat/voicechat-server.properties
 
       - name: copy banned ips
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-ips.json

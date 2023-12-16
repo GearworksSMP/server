@@ -16,6 +16,8 @@ jobs:
   build-client-files:
     needs: release-on-push
     runs-on: ubuntu-latest
+    env:
+      CI_COMMIT_AUTHOR: uberswe
     steps:
       - uses: actions/checkout@v2
 
