@@ -34,7 +34,7 @@ jobs:
           git push origin $TAG
 
       - name: Zip Folder
-        run: zip -r ${{ github.event.repository.name }}.zip ./client/
+        run: zip -r curseforge_client_export_${{steps.tag.outputs.tag}}.zip ./client/
 
       - name: Release
         uses: softprops/action-gh-release@v1
