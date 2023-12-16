@@ -14,6 +14,7 @@ jobs:
         with:
           bump_version_scheme: patch
           use_github_release_notes: true
+          tag_prefix: dev-v
 
       - name: Check Output Parameters
         run: |
