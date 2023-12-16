@@ -69,4 +69,5 @@ jobs:
           script: |
             cd /community-development/
             chown -R root:root .
+            chmod +x ./minecraft.sh
             ./minecraft.sh start
