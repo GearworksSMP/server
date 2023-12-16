@@ -20,6 +20,9 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
+      - name: copy minecraft.sh
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/minecraft.dev.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/minecraft.sh
+
       - name: Stop server
         uses: appleboy/ssh-action@master
         with:
@@ -53,9 +56,6 @@ jobs:
 
       - name: copy kubejs
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
-
-      - name: copy minecraft.sh
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/minecraft.dev.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/minecraft.sh
 
       - name: copy mods
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
