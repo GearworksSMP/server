@@ -34,7 +34,7 @@ jobs:
             ./minecraft.sh stop
 
       - name: deploy configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: deploy configs
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/voicechat/voicechat-server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/voicechat/voicechat-server.properties
@@ -46,19 +46,19 @@ jobs:
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-players.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-players.json
 
       - name: copy default configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/defaultconfigs --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: copy local
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/local --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: copy kubejs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/kubejs --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: copy minecraft.sh
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/minecraft.dev.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/minecraft.sh
 
       - name: copy mods
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/mods --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: copy run.sh
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/run.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/run.sh
