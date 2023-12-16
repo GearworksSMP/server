@@ -50,6 +50,9 @@ jobs:
       - name: copy mods
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/mods ./server/
 
+      - name: copy ops.json
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ops.json ./server/
+
       - name: copy run.sh
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/run.sh ./server/
 

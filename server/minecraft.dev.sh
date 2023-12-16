@@ -51,7 +51,7 @@ MC_PATH=/community-development/
 SERVERMOD=1
 RUNECRAFT=0
 SCREEN_NAME="dev"
-MEMALOC=8192
+MEMALOC=4096
 DISPLAY_ON_LAUNCH=0
 
 WORLD_NAME="uberswesCommunityEdition"

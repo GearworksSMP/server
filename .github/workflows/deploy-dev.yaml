@@ -23,6 +23,17 @@ jobs:
       - name: deploy configs
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config --delete
 
+      - name: Stop server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /community-development/
+            ./minecraft.sh stop
+
       - name: copy banned ips
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-ips.json
 
@@ -47,6 +58,9 @@ jobs:
       - name: copy run.sh
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/run.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/run.sh
 
+      - name: copy ops.json
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/ops.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ops.json
+
       - name: copy server.properties
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/server.properties
 
@@ -56,7 +70,7 @@ jobs:
       - name: copy whitelist.json
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.dev.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/whitelist.json
 
-      - name: Copy Latest Backup And Reboot
+      - name: Copy Latest Backup
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -67,9 +81,19 @@ jobs:
             rm -rf /community-development/uberswesCommunityEdition
             cd /community/backups/
             unzip "$(ls -t | head -n 2 | tail -n 1)" -d /community-development/
+            cp -r /community/libraries /community-development/libraries
+            cp -r /community/eula.txt /community-development/eula.txt
             cd /community-development/
             chown -R root:root .
             chmod +x ./minecraft.sh
-            ./minecraft.sh stop
-            sleep 10s
+
+      - name: Start Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /community-development/
             ./minecraft.sh start
