@@ -68,4 +68,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /community-development/
+            chown -R root:root .
             ./minecraft.sh start

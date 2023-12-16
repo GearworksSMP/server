@@ -13,3 +13,19 @@ jobs:
         with:
           bump_version_scheme: minor
           use_github_release_notes: true
+  build-client-files:
+    needs: release-on-push
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Zip Folder
+        run: zip -r ${{ github.event.repository.name }}.zip ./client/
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: ${{ github.event.repository.name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
