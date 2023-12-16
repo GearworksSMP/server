@@ -21,6 +21,8 @@ jobs:
           echo "Got release version ${{ steps.release.outputs.version }}"
           echo "Upload release artifacts to ${{ steps.release.outputs.upload_url }}"
 
+      - uses: actions/checkout@v2
+
       - name: Zip Folder
         run: zip -r curseforge_client_export_${{ steps.release.outputs.tag_name }}.zip ./client/
 
