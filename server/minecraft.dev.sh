@@ -47,10 +47,10 @@
 #  mincraft.net and restarts the server.
 
 # Configuration
-MC_PATH=/community/
+MC_PATH=/community-development/
 SERVERMOD=1
 RUNECRAFT=0
-SCREEN_NAME="communitydev"
+SCREEN_NAME="dev"
 MEMALOC=8192
 DISPLAY_ON_LAUNCH=0
 
