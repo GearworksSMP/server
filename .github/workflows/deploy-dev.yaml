@@ -56,13 +56,7 @@ jobs:
       - name: copy whitelist.json
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.dev.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/whitelist.json
 
-      - name: Remove old world
-        run: rm -rf /community-development/uberswesCommunityEdition
-
-      - name: Restore backup
-        run: cd /community/backups/ && unzip "$(ls -t | head -n 1)" -d /community-development/
-
-      - name: Restart Dev Server
+      - name: Copy Latest Backup And Reboot
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -70,6 +64,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
+            rm -rf /community-development/uberswesCommunityEdition
+            cd /community/backups/
+            unzip "$(ls -t | head -n 1)" -d /community-development/
             cd /community-development/
             chown -R root:root .
             chmod +x ./minecraft.sh
