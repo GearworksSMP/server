@@ -33,7 +33,7 @@ jobs:
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/defaultconfigs --delete
 
       - name: copy local
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/local
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/local --delete
 
       - name: copy kubejs
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/kubejs --delete
@@ -66,7 +66,7 @@ jobs:
           script: |
             rm -rf /community-development/uberswesCommunityEdition
             cd /community/backups/
-            unzip "$(ls -t | head -n 1)" -d /community-development/
+            unzip "$(ls -t | head -n 2 | tail -n 1)" -d /community-development/
             cd /community-development/
             chown -R root:root .
             chmod +x ./minecraft.sh
