@@ -11,8 +11,8 @@
     {
         "dimension": "minecraft:overworld",
         "mincount": {
-          "amount": 100,
-          "passive": true,
+          "amount": 200,
+          "hostile": false,
           "perplayer": true
         },
         "result": "deny"
