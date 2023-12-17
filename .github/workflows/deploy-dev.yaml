@@ -108,3 +108,4 @@ jobs:
             chown -R root:root .
             chmod +x ./minecraft.sh
             ./minecraft.sh start
+            sleep 10s
