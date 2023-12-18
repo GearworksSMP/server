@@ -17,21 +17,25 @@ Some ports need to be opened for the different environments and mods to work
 #### Minecraft Server
 
 Production: 25585
+
 Development: 26685
 
 #### Simple Voice Chat
 
 Production: 25586
+
 Development: 26686
 
 #### Bluemap
 
 Production: 8100
+
 Development: 8200
 
 #### Create Track Map
 
 Production: 3876
+
 Development: 3886
 
 ### Special Mods
