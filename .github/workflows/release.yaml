@@ -30,7 +30,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: curseforge_client_export_${{ steps.release.outputs.tag_name }}.zip
+          files: client/curseforge_client_export_${{ steps.release.outputs.tag_name }}.zip
           tag_name: ${{ steps.release.outputs.tag_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
