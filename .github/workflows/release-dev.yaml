@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Zip Folder
-        run: zip -r curseforge_client_export_${{ steps.release.outputs.tag_name }}.zip ./client/*
+        run: cd ./client; zip -r curseforge_client_export_${{ steps.release.outputs.tag_name }}.zip *
 
       - name: Release
         uses: softprops/action-gh-release@v1
