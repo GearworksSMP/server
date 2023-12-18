@@ -54,6 +54,12 @@ jobs:
       - name: copy Discord-Integration.dev.toml
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/Discord-Integration.dev.toml ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/Discord-Integration.toml
 
+      - name: copy bluemap webserver.conf
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/bluemap/webserver.dev.conf ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/bluemap/webserver.conf
+
+      - name: copy create-track-map.json
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/create-track-map.dev.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/create-track-map.json
+
       - name: copy local
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
