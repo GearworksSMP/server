@@ -80,9 +80,11 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
+          allenvs: true
           script: |
             cd /community/
             chown -R root:root .
             chmod +x ./minecraft.sh
+            /root/.profile
             ./minecraft.sh start
             sleep 10s
