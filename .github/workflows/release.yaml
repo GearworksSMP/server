@@ -1,0 +1,36 @@
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  release-on-push:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - id: release
+        uses: rymndhng/release-on-push-action@master
+        with:
+          bump_version_scheme: minor
+          use_github_release_notes: true
+          tag_prefix: v
+
+      - name: Check Output Parameters
+        run: |
+          echo "Got tag name ${{ steps.release.outputs.tag_name }}"
+          echo "Got release version ${{ steps.release.outputs.version }}"
+          echo "Upload release artifacts to ${{ steps.release.outputs.upload_url }}"
+
+      - uses: actions/checkout@v2
+
+      - name: Zip Folder
+        run: cd ./client; zip -r curseforge_client_export_${{ steps.release.outputs.tag_name }}.zip *
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: client/curseforge_client_export_${{ steps.release.outputs.tag_name }}.zip
+          tag_name: ${{ steps.release.outputs.tag_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

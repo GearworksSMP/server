@@ -194,7 +194,7 @@ args = [    ]
       # Generate unique chat colors from player uuid?
       generateUniqueColors = true
       # Send as embed?
-      asEmbed = true
+      asEmbed = false
       # Color of embed bar
       colorHexCode = "#808080"
       # Custom embed JSON, will overwrite color setting. For more info, check the documentation at https://github.com/ErdbeerbaerLP/DiscordIntegration-Core/wiki/embed-mode or ask on discord.

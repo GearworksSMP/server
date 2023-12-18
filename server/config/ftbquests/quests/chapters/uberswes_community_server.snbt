@@ -4,54 +4,165 @@
 	filename: "uberswes_community_server"
 	group: ""
 	id: "41AF2817F975F41A"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"Be respectful and kind to others."
-			"(No harassment, discrimination, or bullying)"
-			""
-			"No griefing. (damaging or destroying other players' builds)"
-			""
-			"No cheating, hacking, or unfair advantages. "
-			"(X-ray, hacked clients, etc)"
-			""
-			"Do not steal or take others' items without permission."
-			""
-			"PvP (Player-vs-Player) only with consent."
-			""
-			"No spamming, advertising, or offensive content."
-			""
-			"Follow staff instructions and decisions."
-			""
-			"Protect your account and keep it secure."
-			"(Don't share your account information)"
-			""
-			"Be mature don't yell or generally cause other players discomfort"
-			""
-			"No squatting and don't claim land that will block others, "
-			"generally try to keep a one chunk distance from other players."
-			""
-			"Keep entities low and farms at a reasonable size. "
-			"Admins may disable or remove things that cause a lot of lag as needed."
-			""
-			"Breaking rules may result in a warning or ban."
-		]
-		id: "0218553A4C749E1C"
-		rewards: [{
-			count: 5
-			id: "727604AB9AC7B140"
-			item: "minecraft:bread"
-			type: "item"
-		}]
-		subtitle: "I've read the rules!"
-		tasks: [{
-			id: "6F8DA415A901DD9F"
-			title: "RULES"
-			type: "checkmark"
-		}]
-		x: 2.5d
-		y: -3.5d
-	}]
-	title: "Uberswe's Community Server"
+	quests: [
+		{
+			description: [
+				"Be respectful and kind to others."
+				"(No harassment, discrimination, or bullying)"
+				""
+				"No griefing. (damaging or destroying other players' builds)"
+				""
+				"No cheating, hacking, or unfair advantages. "
+				"(X-ray, hacked clients, etc)"
+				""
+				"Do not steal or take others' items without permission."
+				""
+				"PvP (Player-vs-Player) only with consent."
+				""
+				"No spamming, advertising, or offensive content."
+				""
+				"Follow staff instructions and decisions."
+				""
+				"Protect your account and keep it secure."
+				"(Don't share your account information)"
+				""
+				"Be mature don't yell or generally cause other players discomfort"
+				""
+				"No squatting and don't claim land that will block others, "
+				"generally try to keep a one chunk distance from other players."
+				""
+				"Keep entities low and farms at a reasonable size. "
+				"Admins may disable or remove things that cause a lot of lag as needed."
+				""
+				"Breaking rules may result in a warning or ban."
+			]
+			id: "0218553A4C749E1C"
+			rewards: [{
+				count: 5
+				id: "727604AB9AC7B140"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			subtitle: "I've read the rules!"
+			tasks: [{
+				id: "6F8DA415A901DD9F"
+				title: "RULES"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0218553A4C749E1C"]
+			description: ["Talkin is not required but encouraged."]
+			id: "54FDC63CF506AADA"
+			rewards: [{
+				id: "009543B2A4C1FE95"
+				item: {
+					Count: 1b
+					id: "minecraft:stone_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Press \"v\" to open voice chat GUI. "
+			tasks: [{
+				id: "3FF805FFCCBA2C21"
+				title: "Setup Voice Chat"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0218553A4C749E1C"]
+			description: ["You can open the map by pressing \"m\" and in the top left you have an icon that will let you claim some land as your own."]
+			id: "50B4604906A9BF61"
+			rewards: [
+				{
+					id: "1FF9F03FBCB57DAD"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "539A3B36F9307853"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			subtitle: "Claim your own land to protect it"
+			tasks: [{
+				id: "2A75F95F62BDFDB5"
+				title: "A place to call home"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0218553A4C749E1C"]
+			description: ["Type /discord link in chat and follow the instructions given"]
+			id: "2CA4DAFC0FEDDC7D"
+			rewards: [{
+				id: "2DC075AA77E30DF0"
+				item: {
+					Count: 1b
+					id: "minecraft:stone_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Help us know who you are on discord"
+			tasks: [{
+				id: "2B46E6C484E2B1FE"
+				title: "Link to Discord"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0218553A4C749E1C"]
+			description: [
+				"The terralith world gen has some amazing biomes to explore."
+				""
+				"The dungeons and extra structures implemented gives endless possibilities of fun adventures!"
+				""
+				"If you are lucky you might even find some nice and fun Artifacts!"
+			]
+			id: "73FC1C87731CAE5D"
+			rewards: [{
+				id: "21A0F65E857DC708"
+				item: {
+					Count: 1b
+					id: "minecraft:stone_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Explore, Loot and have fun!"
+			tasks: [{
+				id: "78D015CEA9241D2D"
+				title: "Explore the world!"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+	]
+	title: "Welcome to Uberswe's Community Server"
 }
