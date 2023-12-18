@@ -1,0 +1,397 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "overworld"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "savanna"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "forest"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "cold"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "minecraft:sparse_jungle"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:birch_taiga"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:blooming_plateau"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:blooming_valley"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:lavender_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:lavender_valley"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:lush_valley"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:mirage_isles"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:aspen_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:sakura_grove"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:sakura_valley"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:skylands"
+      }
+    ],
+[
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:alpine_highlands"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:birch_taiga"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "autumnity:maple_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:coniferous_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:bryce_canyon"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:forested_highlands"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:haze_mountain"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:lush_valley"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:moonlight_grove"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:moonlight_valley"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:shield"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:siberian_taiga"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:skylands"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:snowy_maple_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:snowy_shield"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:temperate_highlands"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:white_cliffs"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:wintry_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:yellowstone"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:redwood_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty_seasonal_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:snowy_coniferous_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:snowy_maple_woods"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:aspen_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:black_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:canadian_sheild"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:cika_woods"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:coniferous_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:frosted_coniferous_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:frosted_taiga"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:red_oak_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:arid_mountains"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:autumnal_maple_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:blackwood_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:frozen_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:maple_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:redwoods"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:silved_birch_forest"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:sparse_redwoods"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:yosemite_lowlands"
+      }
+    ]
+  ]
+}
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:temperate_highlands"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "minecraft:lush_caves"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "regions_unexplored:lush_delta"
+      }   
+    ]
+  ]
+}
