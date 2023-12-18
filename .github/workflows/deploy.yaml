@@ -17,11 +17,25 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           known_hosts: unnecessary
 
+      - name: Stop Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /community/
+            chown -R root:root .
+            chmod +x ./minecraft.sh
+            ./minecraft.sh stop
+            sleep 10s
+
       - name: Adding Known Hosts
         run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: deploy configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/config --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
 
       - name: copy banned ips
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-ips.json
@@ -30,19 +44,19 @@ jobs:
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-players.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-players.json
 
       - name: copy default configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/defaultconfigs --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
 
       - name: copy local
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/local
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/
 
       - name: copy kubejs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/kubejs --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
 
       - name: copy minecraft.sh
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/minecraft.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/minecraft.sh
 
       - name: copy mods
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/mods --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
 
       - name: copy run.sh
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/run.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/run.sh
@@ -57,7 +71,7 @@ jobs:
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/whitelist.json
 
       - name: copy world settings
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/serverconfig --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/ --delete
 
       - name: Restart Server
         uses: appleboy/ssh-action@master
@@ -70,6 +84,5 @@ jobs:
             cd /community/
             chown -R root:root .
             chmod +x ./minecraft.sh
-            ./minecraft.sh stop
-            sleep 10s
             ./minecraft.sh start
+            sleep 10s
