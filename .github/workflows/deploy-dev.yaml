@@ -113,6 +113,6 @@ jobs:
             cd /community-development/
             chown -R root:root .
             chmod +x ./minecraft.sh
-            ~/.profile
+            sudo ~/.profile
             ./minecraft.sh start
             sleep 10s
