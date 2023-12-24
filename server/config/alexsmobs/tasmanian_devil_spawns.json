@@ -104,7 +104,7 @@
         "value": "terralith:skylands"
       }
     ],
-[
+    [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
@@ -383,9 +383,7 @@
         "negate": false,
         "value": "terralith:yosemite_lowlands"
       }
-    ]
-  ]
-}
+    ],
     [
       {
         "type": "REGISTRY_NAME",

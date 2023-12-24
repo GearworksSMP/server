@@ -6,7 +6,8 @@
         "negate": false,
         "value": "minecraft:sparse_jungle"
       }
-    ],    [
+    ],
+    [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
