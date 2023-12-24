@@ -30,6 +30,20 @@
         "negate": false,
         "value": "terralith:moonlight_grove"
       }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "atmospheric:sparse_rainforest_basin"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg_white_mangrove_marshes"
+      }
     ]
   ]
 }
