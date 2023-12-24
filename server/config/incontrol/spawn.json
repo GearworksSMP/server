@@ -7,26 +7,5 @@
           "perplayer": true
         },
         "result": "deny"
-    },
-    {
-        "dimension": "minecraft:overworld",
-        "mincount": {
-          "amount": 200,
-          "hostile": false,
-          "perplayer": true
-        },
-        "result": "deny"
-    },
-    {
-        "mob": ["minecraft:sheep", "minecraft:pig", "minecraft:cow", "minecraft:horse", "minecraft:cow", "minecraft:chicken"],
-        "dimension": "minecraft:overworld",
-        "block": "minecraft:grass_block",
-        "result": "default"
-    },
-    {
-        "mob": ["minecraft:sheep", "minecraft:pig", "minecraft:cow", "minecraft:horse", "minecraft:cow", "minecraft:chicken"],
-        "dimension": "minecraft:overworld",
-        "incontrol": true,
-        "result": "deny"
     }
 ]
