@@ -302,8 +302,8 @@
 					"Is Blacklist" = true
 
 [general]
-	"Enable 'q' Button" = true
-	"'q' Button on the Right" = false
+	"Enable q Button" = true
+	"q Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#Disable this to turn off the quark system that makes features turn off when specified mods with the same content are loaded
 	"Use Anti Overlap" = true
