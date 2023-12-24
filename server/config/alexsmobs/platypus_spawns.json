@@ -9,47 +9,17 @@
       {
         "type": "BIOME_DICT",
         "negate": false,
-        "value": "ocean"
+        "value": "river"
       },
       {
         "type": "BIOME_DICT",
         "negate": false,
         "value": "hot"
-      }
-    ],
-    [
+      },
       {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "atmospheric:rainforest_basin"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "atmospheric:sparse_rainforest_basin"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:dead_sea"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:lush_stacks"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:giant_bayou"
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "cold"
       }
     ],
     [
@@ -63,21 +33,21 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith_caldera"
+        "value": "terralith:moonlight_grove"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:basalt_cliffs"
+        "value": "atmospheric:sparse_rainforest_basin"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:white_cliffs"
+        "value": "byg_white_mangrove_marshes"
       }
     ]
   ]
