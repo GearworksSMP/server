@@ -26,6 +26,13 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
+        "value": "minecraft:lush_caves"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
         "value": "terralith:warm_river"
       }
     ],
