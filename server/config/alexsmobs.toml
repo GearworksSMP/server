@@ -85,10 +85,10 @@
 	voidWormSpawnDimensions = ["minecraft:the_end"]
 	#All void worm damage is scaled to this.
 	#Range: 0.0 ~ 100.0
-	voidWormDamageModifier = 5.0
+	voidWormDamageModifier = 6.0
 	#Max Health of the void worm boss.
 	#Range: 0.0 ~ 1000000.0
-	voidWormMaxHealth = 400.0
+	voidWormMaxHealth = 1000.0
 	#Whether the void worm boss is summonable or not, via the mysterious worm item.
 	voidWormSummonable = true
 	#Whether seagulls should steal food out of players' hotbar slots.
@@ -161,7 +161,7 @@
 		crocSpawnRolls = 1
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		flySpawnWeight = 30
+		flySpawnWeight = 3
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		flySpawnRolls = 1
@@ -365,7 +365,7 @@
 		emuSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		platypusSpawnWeight = 20
+		platypusSpawnWeight = 15
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		platypusSpawnRolls = 0

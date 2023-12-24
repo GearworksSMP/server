@@ -13,6 +13,11 @@
       },
       {
         "type": "BIOME_DICT",
+        "negate": false,
+        "value": "hot"
+      },
+      {
+        "type": "BIOME_DICT",
         "negate": true,
         "value": "cold"
       }
@@ -28,13 +33,6 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "regions_unexplored:giant_bayou"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "terralith:moonlight_grove"
       }
     ],
@@ -42,35 +40,14 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "biomesoplenty:wetland"
+        "value": "atmospheric:sparse_rainforest_basin"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "regions_unexplored:fel"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:fungal_fen"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:cypress_swamplands"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:white_mangrove_marshes"
+        "value": "byg_white_mangrove_marshes"
       }
     ]
   ]

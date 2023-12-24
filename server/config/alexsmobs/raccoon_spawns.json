@@ -140,7 +140,6 @@
       }
     ],
     [
-    [
       {
         "type": "REGISTRY_NAME",
         "negate": false,

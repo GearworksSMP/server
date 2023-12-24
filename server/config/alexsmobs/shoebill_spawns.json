@@ -53,8 +53,8 @@
         "negate": false,
         "value": "byg:bayou"
       }
-     ],
-     [
+    ],
+    [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
