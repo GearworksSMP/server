@@ -156,6 +156,7 @@
         "negate": false,
         "value": "biomesoplenty:woodland"
       }
+    ],
     [
       {
         "type": "REGISTRY_NAME",
@@ -183,7 +184,6 @@
         "negate": false,
         "value": "regions_unexplored:pine_forest"
       }
-    ],
     ]
   ]
 }

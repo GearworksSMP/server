@@ -138,6 +138,7 @@
         "value": "terralith:rocky_jungle"
       }
     ],
+    [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
@@ -214,6 +215,7 @@
         "value": "regions_unexplored:lush_hills"
       }
     ],
+    [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
