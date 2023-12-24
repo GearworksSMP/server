@@ -1,11 +1,1 @@
-[
-    {
-        "dimension": "minecraft:overworld",
-        "mincount": {
-          "amount": 25,
-          "hostile": true,
-          "perplayer": true
-        },
-        "result": "deny"
-    }
-]
+[]
