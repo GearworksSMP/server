@@ -100,7 +100,6 @@ jobs:
             cd /community-development/
             chown -R root:root .
             chmod +x ./minecraft.sh
-            sleep 10s
 
       - name: Start Server
         uses: appleboy/ssh-action@master
@@ -114,6 +113,5 @@ jobs:
             cd /community-development/
             chown -R root:root .
             chmod +x ./minecraft.sh
-            /root/.profile
+            /root/.bashrc
             ./minecraft.sh start
-            sleep 10s
