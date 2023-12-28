@@ -302,8 +302,6 @@
 					"Is Blacklist" = true
 
 [general]
-	"Enable q Button" = true
-	"q Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#Disable this to turn off the quark system that makes features turn off when specified mods with the same content are loaded
 	"Use Anti Overlap" = true
@@ -344,6 +342,8 @@
 	"Enable Jei Item Info" = true
 	#For JEI info purposes, add any items here to specifically disable their JEI info from Quark. Note that Quark already only shows info that's relevant to which features are enabled
 	"Suppressed Info" = []
+	"Enable 'q' Button" = true
+	"'q' Button on the Right" = false
 
 [categories]
 	Automation = true
