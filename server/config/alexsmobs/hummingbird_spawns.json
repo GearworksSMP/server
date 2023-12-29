@@ -18,12 +18,7 @@
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "jungle"
+        "value": "minecraft:is_jungle"
       }
     ],
     [
@@ -37,7 +32,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:jungle_mountains"
+        "value": "terralith:blooming_valley"
       }
     ],
     [
@@ -51,49 +46,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "atmospheric:sparse_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:amethyst_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:blooming_valley"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:blooming_plateau"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:cloud_forest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "terralith:lavender_valley"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:mirage_isles"
       }
     ],
     [
@@ -114,41 +67,6 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "biomesoplenty:cherry_blossom_grove"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:lavender_field"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:orchard"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:rocky_jungle"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:mystic_grove"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "terralith:sakura_grove"
       }
     ],
@@ -163,126 +81,77 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "byg:cherry_blossom_forest"
+        "value": "terralith:amethyst_canyon"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:sakura_grove"
+        "value": "terralith:amethyst_rainforest"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "byg:orchard"
+        "value": "terralith:jungle_mountains"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "byg:rose_fields"
+        "value": "terralith:rocky_jungle"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "byg:temperate:rainforest"
+        "value": "terralith:tropical_jungle"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "environmental:blossom_valleys"
+        "value": "terralith:blooming_plateau"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "byg:amaranth_fields"
+        "value": "terralith:valley_clearing"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "regions_unexplored:lush_hills"
+        "value": "terralith:orchid_swamp"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "regions_unexplored:lupine_plains"
+        "value": "terralith:skylands_autumn"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "regions_unexplored:meadow"
+        "value": "terralith:skylands_spring"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "regions_unexplored:flower_field"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:mauve_hills"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:allium_fields"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:clover_patch"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:jacaranda_forest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:skyris_vale"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:orchard"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:lush_stacks"
+        "value": "terralith:skylands_summer"
       }
     ]
   ]

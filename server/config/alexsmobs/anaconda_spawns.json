@@ -4,40 +4,26 @@
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "swamp"
+        "value": "forge:is_swamp"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "atmospheric:rainforest_basin"
+        "value": "minecraft:mangrove_swamp"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "atmospheric:sparse_rainforest_basin"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:bayou"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:marsh"
+        "value": "terralith:ice_marsh"
       }
     ],
     [
@@ -51,63 +37,21 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "biomesoplenty:rainforest"
+        "value": "terralith:amethyst_rainforest"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "byg:tropical_rainforest"
+        "value": "terralith:tropical_jungle"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "byg:white_mangrove_marshes"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:environmental:marsh"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:bayou"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:eucalyptus_forest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:giant_bayou"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:cypress_swamplands"
+        "value": "terralith:skylands_summer"
       }
     ]
   ]

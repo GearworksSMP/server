@@ -2,11 +2,6 @@
   "biomes": [
     [
       {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "overworld"
-      },
-      {
         "type": "REGISTRY_NAME",
         "negate": false,
         "value": "minecraft:bamboo_jungle"
@@ -16,7 +11,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "biomesoplenty:bamboo_blossom_grove"
+        "value": "biomesoplenty:bamboo_grove"
       }
     ],
     [
@@ -30,7 +25,14 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:jungle_mountains"
+        "value": "terralith:sakura_grove"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:sakura_valley"
       }
     ],
     [
@@ -51,105 +53,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "atmospheric:rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "atmospheric:_sparse_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:rocky_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty_tropics"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:cherry_blossom_forest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:temperate_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:tropical_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:rocky_jungle"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:bamboo_forest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:eucalyptus_forest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:old_growth_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:tropics"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:tropical_jungle"
+        "value": "terralith:skylands_spring"
       }
     ]
   ]

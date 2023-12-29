@@ -4,24 +4,17 @@
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "mushroom"
+        "value": "forge:is_mushroom"
       },
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "rare"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:cave/fungal_caves"
+        "value": "forge:is_rare"
       }
     ],
     [

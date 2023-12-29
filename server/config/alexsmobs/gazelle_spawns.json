@@ -4,24 +4,7 @@
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "savanna"
-      }
-    ],
-    [
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "savanna"
+        "value": "minecraft:is_savanna"
       }
     ],
     [
@@ -35,28 +18,14 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
+        "value": "terralith:brushland"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
         "value": "terralith:fractured_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:hot_shrubland"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:ashen_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:shrubland"
       }
     ],
     [
@@ -70,35 +39,21 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "biomesoplenty:lush_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:baobab_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:baobab_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:dry_bushland"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "terralith:savanna_slopes"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:shrubland"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:red_oasis"
       }
     ]
   ]

@@ -4,22 +4,17 @@
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "forge:is_hot/overworld"
       },
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "hot"
+        "value": "forge:is_dry/overworld"
       },
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "dry"
-      },
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "sandy"
+        "value": "forge:is_sandy"
       }
     ],
     [
@@ -33,7 +28,21 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
+        "value": "terralith:desert_canyon"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
         "value": "terralith:desert_spires"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:ashen_savanna"
       }
     ],
     [

@@ -4,34 +4,22 @@
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "forge:is_dry/overworld"
       },
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "desert"
-      }
-    ],
-    [
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "overworld"
+        "value": "forge:is_hot/overworld"
       },
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "hot"
+        "value": "forge:is_sandy"
       },
       {
         "type": "BIOME_TAG",
-        "negate": false,
-        "value": "dry"
-      },
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "sandy"
+        "negate": true,
+        "value": "minecraft:is_badlands"
       }
     ],
     [
@@ -67,55 +55,6 @@
         "type": "REGISTRY_NAME",
         "negate": false,
         "value": "terralith:sandstone_valley"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "atmospheric:dunes"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:lush_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:atacama_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:windswept_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:windswept_dunes"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:joshua_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:saguaro_desert"
       }
     ],
     [
