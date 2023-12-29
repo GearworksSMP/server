@@ -29,7 +29,6 @@ jobs:
             chown -R root:root .
             chmod +x ./minecraft.sh
             ./minecraft.sh stop
-            sleep 10s
 
       - name: Adding Known Hosts
         run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
@@ -85,6 +84,5 @@ jobs:
             cd /community/
             chown -R root:root .
             chmod +x ./minecraft.sh
-            /root/.profile
+            /root/.bashrc
             ./minecraft.sh start
-            sleep 10s

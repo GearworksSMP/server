@@ -2,36 +2,50 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "savanna"
-      },
-      {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "forest"
+        "value": "minecraft:is_forest"
       }
     ],
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": true,
-        "value": "savanna"
+        "value": "minecraft:is_savanna"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "plains"
+        "value": "forge:is_plains"
+      }
+    ],
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_overworld"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_taiga"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:alpine_grove"
       }
     ],
     [
@@ -45,13 +59,6 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:blooming_plateau"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "terralith:blooming_valley"
       }
     ],
@@ -59,28 +66,14 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:cloud_forest"
+        "value": "terralith:lavender_forest"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:forested_highlands"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:haze_mountain"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:lush_valley"
+        "value": "terralith:lavender_valley"
       }
     ],
     [
@@ -101,7 +94,35 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:temperate_highlands"
+        "value": "terralith:sakura_grove"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:sakura_valley"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:cold_shrubland"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:highlands"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:hot_shrubland"
       }
     ],
     [
@@ -115,28 +136,14 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:shield"
+        "value": "terralith:shield_clearing"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:siberian_taiga"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:skylands"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:white_cliffs"
+        "value": "terralith:steppe"
       }
     ],
     [
@@ -150,14 +157,28 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:yellowstone"
+        "value": "terralith:temperate_highlands"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:yosemite_lowlands"
+        "value": "terralith:skylands_autumn"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:mirage_isles"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:redwood_forest"
       }
     ]
   ]

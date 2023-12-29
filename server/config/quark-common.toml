@@ -302,8 +302,6 @@
 					"Is Blacklist" = true
 
 [general]
-	"Enable q Button" = true
-	"q Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#Disable this to turn off the quark system that makes features turn off when specified mods with the same content are loaded
 	"Use Anti Overlap" = true
@@ -344,6 +342,8 @@
 	"Enable Jei Item Info" = true
 	#For JEI info purposes, add any items here to specifically disable their JEI info from Quark. Note that Quark already only shows info that's relevant to which features are enabled
 	"Suppressed Info" = []
+	"Enable 'q' Button" = true
+	"'q' Button on the Right" = false
 
 [categories]
 	Automation = true
@@ -1457,7 +1457,7 @@
 		"Drop Leaf Particles" = true
 
 		[world.blossom_trees.blue]
-			Rarity = 200
+			Rarity = 2
 
 			[world.blossom_trees.blue.dimensions]
 				"Is Blacklist" = false
@@ -1466,7 +1466,7 @@
 			[world.blossom_trees.blue.biome_config]
 
 				[world.blossom_trees.blue.biome_config.tags]
-					"Biome Tags" = ["forge:is_snowy"]
+					"Biome Tags" = ["forge:is_snowy","terralith:cold_shrubland","terralith:siberian_taiga"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.blue.biome_config.biomes]
@@ -1474,7 +1474,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.lavender]
-			Rarity = 100
+			Rarity = 2
 
 			[world.blossom_trees.lavender.dimensions]
 				"Is Blacklist" = false
@@ -1483,7 +1483,7 @@
 			[world.blossom_trees.lavender.biome_config]
 
 				[world.blossom_trees.lavender.biome_config.tags]
-					"Biome Tags" = ["forge:is_swamp"]
+					"Biome Tags" = ["forge:is_swamp","terralith:yellowstone"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.lavender.biome_config.biomes]
@@ -1491,7 +1491,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.orange]
-			Rarity = 100
+			Rarity = 2
 
 			[world.blossom_trees.orange.dimensions]
 				"Is Blacklist" = false
@@ -1500,7 +1500,7 @@
 			[world.blossom_trees.orange.biome_config]
 
 				[world.blossom_trees.orange.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_savanna"]
+					"Biome Tags" = ["minecraft:is_savanna","terralith:highlands"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.orange.biome_config.biomes]
@@ -1508,7 +1508,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.pink]
-			Rarity = 100
+			Rarity = 2
 
 			[world.blossom_trees.pink.dimensions]
 				"Is Blacklist" = false
@@ -1517,7 +1517,7 @@
 			[world.blossom_trees.pink.biome_config]
 
 				[world.blossom_trees.pink.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_mountain"]
+					"Biome Tags" = ["minecraft:is_mountain","terralith:alpine_highlands"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.pink.biome_config.biomes]
@@ -1525,7 +1525,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.yellow]
-			Rarity = 200
+			Rarity = 2
 
 			[world.blossom_trees.yellow.dimensions]
 				"Is Blacklist" = false
@@ -1534,7 +1534,7 @@
 			[world.blossom_trees.yellow.biome_config]
 
 				[world.blossom_trees.yellow.biome_config.tags]
-					"Biome Tags" = ["forge:is_plains"]
+					"Biome Tags" = ["forge:is_plains","terralith:temperate_highlands","terralith:forested_highlands"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.yellow.biome_config.biomes]
@@ -1542,7 +1542,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.red]
-			Rarity = 30
+			Rarity = 2
 
 			[world.blossom_trees.red.dimensions]
 				"Is Blacklist" = false
@@ -1551,7 +1551,7 @@
 			[world.blossom_trees.red.biome_config]
 
 				[world.blossom_trees.red.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_badlands"]
+					"Biome Tags" = ["minecraft:is_badlands","terralith:brushland"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.red.biome_config.biomes]
