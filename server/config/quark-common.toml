@@ -1466,7 +1466,7 @@
 			[world.blossom_trees.blue.biome_config]
 
 				[world.blossom_trees.blue.biome_config.tags]
-					"Biome Tags" = ["forge:is_snowy","terralith:cold_shrubland","terralith:siberian_taiga"]
+					"Biome Tags" = ["forge:is_snowy", "terralith:cold_shrubland", "terralith:siberian_taiga"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.blue.biome_config.biomes]
@@ -1483,7 +1483,7 @@
 			[world.blossom_trees.lavender.biome_config]
 
 				[world.blossom_trees.lavender.biome_config.tags]
-					"Biome Tags" = ["forge:is_swamp","terralith:yellowstone"]
+					"Biome Tags" = ["forge:is_swamp", "terralith:yellowstone"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.lavender.biome_config.biomes]
@@ -1500,7 +1500,7 @@
 			[world.blossom_trees.orange.biome_config]
 
 				[world.blossom_trees.orange.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_savanna","terralith:highlands"]
+					"Biome Tags" = ["minecraft:is_savanna", "terralith:highlands"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.orange.biome_config.biomes]
@@ -1517,7 +1517,7 @@
 			[world.blossom_trees.pink.biome_config]
 
 				[world.blossom_trees.pink.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_mountain","terralith:alpine_highlands"]
+					"Biome Tags" = ["minecraft:is_mountain", "terralith:alpine_highlands"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.pink.biome_config.biomes]
@@ -1534,7 +1534,7 @@
 			[world.blossom_trees.yellow.biome_config]
 
 				[world.blossom_trees.yellow.biome_config.tags]
-					"Biome Tags" = ["forge:is_plains","terralith:temperate_highlands","terralith:forested_highlands"]
+					"Biome Tags" = ["forge:is_plains", "terralith:temperate_highlands", "terralith:forested_highlands"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.yellow.biome_config.biomes]
@@ -1551,7 +1551,7 @@
 			[world.blossom_trees.red.biome_config]
 
 				[world.blossom_trees.red.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_badlands","terralith:brushland"]
+					"Biome Tags" = ["minecraft:is_badlands", "terralith:brushland"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.red.biome_config.biomes]

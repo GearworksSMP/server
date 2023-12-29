@@ -76,17 +76,5 @@
       "type": "url",
       "value": "https://spark.lucko.me/pKURizeZlD"
     }
-  },
-  {
-    "user": {
-      "type": "other",
-      "name": "Console"
-    },
-    "time": 1698401378045,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/4w7meLK4Mt"
-    }
   }
 ]
