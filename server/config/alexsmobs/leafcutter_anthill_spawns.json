@@ -2,42 +2,33 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "jungle"
+        "value": "minecraft:is_jungle"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "minecraft:bamboo_jungle"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "atmospheric:rainforest"
+        "value": "terralith:amethyst_canyon"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "atmospheric:sparse_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:bamboo_grove"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:tropical_rainforest"
+        "value": "terralith:amethyst_rainforest"
       }
     ],
     [
@@ -58,70 +49,14 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "byg:giuana_shield"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:amethyst_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:amethyst_canyon"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:fungal_jungle"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:tropics"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:bamboo_forest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:old_growth_rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:rainforest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:tropics"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "terralith:tropical_jungle"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:skylands_summer"
       }
     ]
   ]

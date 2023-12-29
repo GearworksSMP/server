@@ -2,40 +2,26 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "mesa"
+        "value": "minecraft:is_badlands"
       }
     ],
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "atmospheric:rocky_dunes"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "atmospheric:dunes"
+        "value": "minecraft:is_savanna"
       }
     ],
     [
@@ -49,70 +35,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "biomesoplenty_dryland"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:highland"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:lush_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:lush_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:araucaria_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:sierra_badlands"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:baobab_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:baobab_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:dry_bushland"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:outback"
+        "value": "terralith:brushland"
       }
     ],
     [
@@ -126,20 +49,6 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:hot_shrubland"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:brushland"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "terralith:savanna_badlands"
       }
     ],
@@ -147,14 +56,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:bryce_canyon"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:painted_mountains"
+        "value": "terralith:savanna_slopes"
       }
     ],
     [
@@ -168,13 +70,6 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "regions_unexplored:steppe"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "terralith:white_mesa"
       }
     ],
@@ -182,7 +77,14 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:savanna_slopes"
+        "value": "terralith:red_oasis"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:lush_desert"
       }
     ]
   ]

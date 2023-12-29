@@ -2,39 +2,39 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "overworld"
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "ocean"
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_ocean"
       },
       {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "cold"
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "forge:is_cold/overworld"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
-        "negate": true,
+        "negate": false,
         "value": "minecraft:lukewarm_ocean"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
-        "negate": true,
+        "negate": false,
         "value": "minecraft:deep_ocean"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
-        "negate": true,
+        "negate": false,
         "value": "minecraft:deep_lukewarm_ocean"
       }
     ]

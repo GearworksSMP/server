@@ -9,136 +9,19 @@
     ],
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "snowy"
+        "value": "forge:is_snowy"
       },
       {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "forest"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "mountain"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "terralith:cave/frostfire_caves"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:cold_shrubland"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:glacial_chasm"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:cave/ice_caves"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:frozen_cliffs"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:ice_marsh"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:scarlet_mountains"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:snowy_fir_clearing"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:tundra"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:cardinal_tundra"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:shattered_glacier"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:icy_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:muskeg"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:frozen_tundra"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:icy_heights"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:spires"
+        "value": "forge:is_plains"
       }
     ],
     [
@@ -146,6 +29,13 @@
         "type": "REGISTRY_NAME",
         "negate": false,
         "value": "terralith:snowy_badlands"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:gravel_desert"
       }
     ]
   ]

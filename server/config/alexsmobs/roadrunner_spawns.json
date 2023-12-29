@@ -2,26 +2,26 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "mesa"
+        "value": "minecraft:is_badlands"
       }
     ],
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "forge:is_dry/overworld"
       },
       {
-        "type": "BIOME_CATEGORY",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "desert"
+        "value": "forge:is_hot/overworld"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "forge:is_sandy"
       }
     ],
     [
@@ -35,84 +35,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:arid_highlands"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:mojave_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:ashen_savanna"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:atacama_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:red_rock_valley"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:windswept_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "byg:sierra_badlands"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "biomesoplenty:lush_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:desert_spires"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:saguaro_desert"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:outback"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "regions_unexplored:joshua_desert"
+        "value": "terralith:desert_canyon"
       }
     ],
     [
@@ -126,28 +49,28 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:brushland"
+        "value": "terralith:desert_spires"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:hot_shrubland"
+        "value": "terralith:red_oasis"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:painted_mountains"
+        "value": "terralith:sandstone_valley"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:savanna_badlands"
+        "value": "terralith:warped_mesa"
       }
     ],
     [
@@ -161,7 +84,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:sandstone_valley"
+        "value": "terralith:red_oasis"
       }
     ]
   ]
