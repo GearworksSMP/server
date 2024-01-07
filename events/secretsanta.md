@@ -26,6 +26,21 @@
 |                 |       |                 |           |                                                                                                                                                             |
 |                 |       |                 |           |                                                                                                                                                             |
 
+Megas Table
+
+| Person          | SecretSanta     | Done | Sent | Wish                                                                                                |
+|-----------------|:----------------|:-----|:-----|-----------------------------------------------------------------------------------------------------|
+| Ingered         | DavidFH         | X    | X    | I would love a schematic for a cute fishing cabin, made with vanilla blocks from my secret santa <3 |
+| The_Gorila      | BaniaKac        |      | X    | I would like to have some netherite :D                                                              |
+| Equixz          | ConverseCat6829 |      | X    | Some random artifact                                                                                |
+| BaniaKac        | J0rmung4nder    | X    | X    | Dear sercret santa im wish for big spirall windmill                                                 |
+| J0rmung4nder    | Equixz          |      | X    | A place at the mall and some warp scroll for people to come visit my city ^^                        |
+| DavidFH         | Ingered         | X    | X    | A needcoin factory lil building                                                                     |
+| Chelcooo        | The_Gorila      |      | X    | I would like a custom made art using the blackboard, that i can place                               |
+| JcWnnr          | Uberswe         | X    | X    | I would like a blue shulker box                                                                     |
+| ConverseCat6829 | JcWnnr          | X    | X    | Full max enchanted netherride Armor                                                                 |
+| Uberswe         | Chelcooo        | X    | X    | I wish I had a penguin                                                                              |
+
 We notify each person individually in a DM with who they were matched with and what their wish was and then we notify the other person that they have a secret santa but not who it is.
 
 Message for secret santa
