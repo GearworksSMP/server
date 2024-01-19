@@ -1,307 +1,7 @@
 
-[client]
-	Camera = false
-	"Elytra Indicator" = true
-	"Improved Tooltips" = true
-	"Greener Grass" = true
-	"Buckets Show Inhabitants" = true
-	"Soul Candles" = true
-	"Auto Walk Keybind" = true
-	"Variant Animal Textures" = true
-	"Microcrafting Helper" = true
-	"Uses For Curses" = true
-	"Wool Shuts Up Minecarts" = true
-	"Back Button Keybind" = true
-	"Chest Searching" = true
-	"Long Range Pick Block" = true
-	"Usage Ticker" = true
-
-	[client.camera]
-		#Date format that will be displayed in screenshots. Must be a valid one (i.e. MM/dd/yyyy)
-		"Date Format" = "MM/dd/yyyy"
-
-	[client.improved_tooltips]
-		"Attribute Tooltips" = true
-		"Food Tooltips" = true
-		"Shulker Tooltips" = true
-		"Map Tooltips" = true
-		"Enchanting Tooltips" = true
-		"Fuel Time Tooltips" = true
-		"Shulker Box Use Colors" = true
-		"Shulker Box Require Shift" = false
-		"Map Require Shift" = false
-		#The value of each shank of food.
-		#Tweak this when using mods like Hardcore Hunger which change that value.
-		"Food Divisor" = 2
-		"Show Saturation" = true
-		"Food Compression Threshold" = 4
-		"Fuel Time Divisor" = 200
-		#Should item attributes be colored relative to your current equipped item?
-		#e.g. if wearing an Iron Helmet, the armor value in a Diamond Helmet will show as green, and vice versa would be red.
-		#If set to false, item attributes will show in white or red if they're negative values.
-		"Show Upgrade Status" = true
-		"Animate Up Down Arrows" = true
-		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang", "supplementaries:slingshot", "supplementaries:bubble_blower", "farmersdelight:diamond_knife"]
-		#A list of additional stacks to display on each enchantment
-		#The format is as follows:
-		#enchant_id=item1,item2,item3...
-		#So to display a carrot on a stick on a mending book, for example, you use:
-		#minecraft:mending=minecraft:carrot_on_a_stick
-		"Enchanting Additional Stacks" = []
-
-	[client.greener_grass]
-		"Affect Leaves" = true
-		"Affect Water" = false
-		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:grass", "minecraft:potted_fern", "minecraft:sugar_cane", "environmental:giant_tall_grass", "valhelsia_structures:grass_block"]
-		"Leaves List" = ["minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:oak_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "atmospheric:rosewood_leaves", "atmospheric:morado_leaves", "atmospheric:yucca_leaves", "autumnity:maple_leaves", "environmental:willow_leaves", "environmental:hanging_willow_leaves", "minecraft:vine"]
-
-		[client.greener_grass.color_matrix]
-			R = [0.89, 0.0, 0.0]
-			G = [0.0, 1.11, 0.0]
-			B = [0.0, 0.0, 0.89]
-
-		[client.greener_grass.water_matrix]
-			R = [0.86, 0.0, 0.0]
-			G = [0.0, 1.0, 0.22]
-			B = [0.0, 0.0, 1.22]
-
-	[client.buckets_show_inhabitants]
-		"Show Axolotls" = true
-		"Show Crabs" = true
-		"Show Tropical Fish" = true
-		"Show Shiny Slime" = true
-
-	[client.auto_walk_keybind]
-		"Draw Hud" = true
-		"Hud Height" = 10
-
-	[client.variant_animal_textures]
-		"Enable Cow" = true
-		"Enable Pig" = true
-		"Enable Chicken" = true
-		"Enable Shiny Rabbit" = true
-		"Enable Shiny Llama" = true
-		"Enable Shiny Dolphin" = true
-		"Enable Shiny Slime" = true
-		"Enable L G B T Bees" = true
-		"Every Bee Is L G B T" = false
-		#The chance for an animal to have a special "Shiny" skin, like a shiny pokemon. This is 1 in X. Set to 0 to disable.
-		"Shiny Animal Chance" = 2048
-		#If a shiny animal should emit occasional sparkles.
-		"Shiny Sparkles" = true
-
-	[client.uses_for_curses]
-		"Vanish Pumpkin Overlay" = true
-		"Bind Armor Stands With Player Heads" = true
-
-	[client.chest_searching]
-
-		[client.chest_searching.overlay_color]
-			A = 0.67
-			R = 0.0
-			G = 0.0
-			B = 0.0
-
-	[client.usage_ticker]
-		#Switch the armor display to the off hand side and the hand display to the main hand side
-		Invert = false
-		"Shift Left" = 0
-		"Shift Right" = 0
-		"Enable Main Hand" = true
-		"Enable Off Hand" = true
-		"Enable Armor" = true
-
-[mobs]
-	Foxhound = true
-	Wraith = false
-	Crabs = true
-	Forgotten = true
-	Shiba = true
-	Stonelings = false
-	Toretoise = true
-
-	[mobs.foxhound]
-		#The chance coal will tame a foxhound
-		"Tame Chance" = 0.05
-		"Foxhounds Speed Up Furnaces" = true
-
-		[mobs.foxhound.spawn_config]
-			#Allowed values: (0,)
-			"Spawn Weight" = 30
-			#Allowed values: [1,)
-			"Min Group Size" = 1
-			#Allowed values: [1,)
-			"Max Group Size" = 2
-
-			[mobs.foxhound.spawn_config.biomes]
-
-				[mobs.foxhound.spawn_config.biomes.tags]
-					"Biome Tags" = []
-					"Is Blacklist" = true
-
-				[mobs.foxhound.spawn_config.biomes.biomes]
-					Biomes = ["minecraft:nether_wastes", "minecraft:basalt_deltas"]
-					"Is Blacklist" = false
-
-		[mobs.foxhound.lesser_spawn_config]
-			"Max Cost" = 0.7
-			"Spawn Cost" = 0.15
-			#Allowed values: (0,)
-			"Spawn Weight" = 2
-			#Allowed values: [1,)
-			"Min Group Size" = 1
-			#Allowed values: [1,)
-			"Max Group Size" = 1
-
-			[mobs.foxhound.lesser_spawn_config.biomes]
-
-				[mobs.foxhound.lesser_spawn_config.biomes.tags]
-					"Biome Tags" = []
-					"Is Blacklist" = true
-
-				[mobs.foxhound.lesser_spawn_config.biomes.biomes]
-					Biomes = ["minecraft:soul_sand_valley"]
-					"Is Blacklist" = false
-
-	[mobs.wraith]
-		#List of sound sets to use with wraiths.
-		#Three sounds must be provided per entry, separated by | (in the format idle|hurt|death). Leave blank for no sound (i.e. if a mob has no ambient noise)
-		"Wraith Sounds" = ["entity.sheep.ambient|entity.sheep.hurt|entity.sheep.death", "entity.cow.ambient|entity.cow.hurt|entity.cow.death", "entity.pig.ambient|entity.pig.hurt|entity.pig.death", "entity.chicken.ambient|entity.chicken.hurt|entity.chicken.death", "entity.horse.ambient|entity.horse.hurt|entity.horse.death", "entity.cat.ambient|entity.cat.hurt|entity.cat.death", "entity.wolf.ambient|entity.wolf.hurt|entity.wolf.death", "entity.villager.ambient|entity.villager.hurt|entity.villager.death", "entity.polar_bear.ambient|entity.polar_bear.hurt|entity.polar_bear.death", "entity.zombie.ambient|entity.zombie.hurt|entity.zombie.death", "entity.skeleton.ambient|entity.skeleton.hurt|entity.skeleton.death", "entity.spider.ambient|entity.spider.hurt|entity.spider.death", "|entity.creeper.hurt|entity.creeper.death", "entity.endermen.ambient|entity.endermen.hurt|entity.endermen.death", "entity.zombie_pig.ambient|entity.zombie_pig.hurt|entity.zombie_pig.death", "entity.witch.ambient|entity.witch.hurt|entity.witch.death", "entity.blaze.ambient|entity.blaze.hurt|entity.blaze.death", "entity.llama.ambient|entity.llama.hurt|entity.llama.death", "|quark:entity.stoneling.cry|quark:entity.stoneling.die", "quark:entity.frog.idle|quark:entity.frog.hurt|quark:entity.frog.die"]
-
-		[mobs.wraith.spawn_config]
-			"Max Cost" = 0.7
-			"Spawn Cost" = 0.15
-			#Allowed values: (0,)
-			"Spawn Weight" = 5
-			#Allowed values: [1,)
-			"Min Group Size" = 1
-			#Allowed values: [1,)
-			"Max Group Size" = 3
-
-			[mobs.wraith.spawn_config.biomes]
-
-				[mobs.wraith.spawn_config.biomes.tags]
-					"Biome Tags" = []
-					"Is Blacklist" = true
-
-				[mobs.wraith.spawn_config.biomes.biomes]
-					Biomes = ["minecraft:soul_sand_valley"]
-					"Is Blacklist" = false
-
-	[mobs.crabs]
-		"Enable Brewing" = true
-		#Whether Resilience should be required for 'How Did We Get Here?' and (if brewing is enabled) 'A Furious Cocktail'.
-		#Keep this on when brewing is disabled if your pack adds an alternative source for the effect.
-		"Resilience Required For All Effects" = true
-
-		[mobs.crabs.spawn_config]
-			#Allowed values: (0,)
-			"Spawn Weight" = 5
-			#Allowed values: [1,)
-			"Min Group Size" = 1
-			#Allowed values: [1,)
-			"Max Group Size" = 3
-
-			[mobs.crabs.spawn_config.biomes]
-
-				[mobs.crabs.spawn_config.biomes.tags]
-					"Biome Tags" = ["minecraft:is_beach"]
-					"Is Blacklist" = false
-
-				[mobs.crabs.spawn_config.biomes.biomes]
-					Biomes = []
-					"Is Blacklist" = true
-
-	[mobs.forgotten]
-		#This is the probability of a Skeleton that spawns under the height threshold being replaced with a Forgotten.
-		"Forgotten Spawn Rate" = 0.05
-		"Max Height For Spawn" = 0
-
-	[mobs.shiba]
-		"Ignore Areas With Skylight" = false
-
-		[mobs.shiba.spawn_config]
-			#Allowed values: (0,)
-			"Spawn Weight" = 40
-			#Allowed values: [1,)
-			"Min Group Size" = 1
-			#Allowed values: [1,)
-			"Max Group Size" = 3
-
-			[mobs.shiba.spawn_config.biomes]
-
-				[mobs.shiba.spawn_config.biomes.tags]
-					"Biome Tags" = ["minecraft:is_mountain"]
-					"Is Blacklist" = false
-
-				[mobs.shiba.spawn_config.biomes.biomes]
-					Biomes = []
-					"Is Blacklist" = true
-
-	[mobs.stonelings]
-		"Max Y Level" = 0
-		"Enable Diamond Heart" = true
-		#When enabled, stonelings are much more aggressive in checking for players
-		"Cautious Stonelings" = false
-		"Tamable Stonelings" = true
-		#Disabled if if Pathfinder Maps are disabled.
-		"Weald Pathfinder Maps" = true
-
-		[mobs.stonelings.dimensions]
-			"Is Blacklist" = false
-			Dimensions = ["minecraft:overworld"]
-
-		[mobs.stonelings.spawn_config]
-			#Allowed values: (0,)
-			"Spawn Weight" = 80
-			#Allowed values: [1,)
-			"Min Group Size" = 1
-			#Allowed values: [1,)
-			"Max Group Size" = 1
-
-			[mobs.stonelings.spawn_config.biomes]
-
-				[mobs.stonelings.spawn_config.biomes.tags]
-					"Biome Tags" = ["forge:is_void", "minecraft:is_nether", "minecraft:is_end"]
-					"Is Blacklist" = true
-
-				[mobs.stonelings.spawn_config.biomes.biomes]
-					Biomes = []
-					"Is Blacklist" = true
-
-	[mobs.toretoise]
-		"Max Y Level" = 0
-		#The number of ticks from mining a tortoise until feeding it could cause it to regrow.
-		"Cooldown Ticks" = 1200
-		#The items that can be fed to toretoises to make them regrow ores.
-		Foods = ["minecraft:glow_berries"]
-		"Allow Toretoise To Regrow" = true
-		#Feeding a toretoise after cooldown will regrow them with a one-in-this-number chance. Set to 1 to always regrow, higher = lower chance.
-		"Regrow Chance" = 3
-
-		[mobs.toretoise.dimensions]
-			"Is Blacklist" = false
-			Dimensions = ["minecraft:overworld"]
-
-		[mobs.toretoise.spawn_config]
-			#Allowed values: (0,)
-			"Spawn Weight" = 120
-			#Allowed values: [1,)
-			"Min Group Size" = 2
-			#Allowed values: [1,)
-			"Max Group Size" = 4
-
-			[mobs.toretoise.spawn_config.biomes]
-
-				[mobs.toretoise.spawn_config.biomes.tags]
-					"Biome Tags" = ["forge:is_void", "minecraft:is_nether", "minecraft:is_end"]
-					"Is Blacklist" = true
-
-				[mobs.toretoise.spawn_config.biomes.biomes]
-					Biomes = []
-					"Is Blacklist" = true
-
 [general]
+	"Enable 'q' Button" = true
+	"'q' Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#Disable this to turn off the quark system that makes features turn off when specified mods with the same content are loaded
 	"Use Anti Overlap" = true
@@ -342,8 +42,6 @@
 	"Enable Jei Item Info" = true
 	#For JEI info purposes, add any items here to specifically disable their JEI info from Quark. Note that Quark already only shows info that's relevant to which features are enabled
 	"Suppressed Info" = []
-	"Enable 'q' Button" = true
-	"'q' Button on the Right" = false
 
 [categories]
 	Automation = true
@@ -1457,7 +1155,7 @@
 		"Drop Leaf Particles" = true
 
 		[world.blossom_trees.blue]
-			Rarity = 2
+			Rarity = 200
 
 			[world.blossom_trees.blue.dimensions]
 				"Is Blacklist" = false
@@ -1466,7 +1164,7 @@
 			[world.blossom_trees.blue.biome_config]
 
 				[world.blossom_trees.blue.biome_config.tags]
-					"Biome Tags" = ["forge:is_snowy", "terralith:cold_shrubland", "terralith:siberian_taiga"]
+					"Biome Tags" = ["forge:is_snowy"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.blue.biome_config.biomes]
@@ -1474,7 +1172,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.lavender]
-			Rarity = 2
+			Rarity = 100
 
 			[world.blossom_trees.lavender.dimensions]
 				"Is Blacklist" = false
@@ -1483,7 +1181,7 @@
 			[world.blossom_trees.lavender.biome_config]
 
 				[world.blossom_trees.lavender.biome_config.tags]
-					"Biome Tags" = ["forge:is_swamp", "terralith:yellowstone"]
+					"Biome Tags" = ["forge:is_swamp"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.lavender.biome_config.biomes]
@@ -1491,7 +1189,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.orange]
-			Rarity = 2
+			Rarity = 100
 
 			[world.blossom_trees.orange.dimensions]
 				"Is Blacklist" = false
@@ -1500,7 +1198,7 @@
 			[world.blossom_trees.orange.biome_config]
 
 				[world.blossom_trees.orange.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_savanna", "terralith:highlands"]
+					"Biome Tags" = ["minecraft:is_savanna"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.orange.biome_config.biomes]
@@ -1508,7 +1206,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.pink]
-			Rarity = 2
+			Rarity = 100
 
 			[world.blossom_trees.pink.dimensions]
 				"Is Blacklist" = false
@@ -1517,7 +1215,7 @@
 			[world.blossom_trees.pink.biome_config]
 
 				[world.blossom_trees.pink.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_mountain", "terralith:alpine_highlands"]
+					"Biome Tags" = ["minecraft:is_mountain"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.pink.biome_config.biomes]
@@ -1525,7 +1223,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.yellow]
-			Rarity = 2
+			Rarity = 200
 
 			[world.blossom_trees.yellow.dimensions]
 				"Is Blacklist" = false
@@ -1534,7 +1232,7 @@
 			[world.blossom_trees.yellow.biome_config]
 
 				[world.blossom_trees.yellow.biome_config.tags]
-					"Biome Tags" = ["forge:is_plains", "terralith:temperate_highlands", "terralith:forested_highlands"]
+					"Biome Tags" = ["forge:is_plains"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.yellow.biome_config.biomes]
@@ -1542,7 +1240,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.red]
-			Rarity = 2
+			Rarity = 30
 
 			[world.blossom_trees.red.dimensions]
 				"Is Blacklist" = false
@@ -1551,7 +1249,7 @@
 			[world.blossom_trees.red.biome_config]
 
 				[world.blossom_trees.red.biome_config.tags]
-					"Biome Tags" = ["minecraft:is_badlands", "terralith:brushland"]
+					"Biome Tags" = ["minecraft:is_badlands"]
 					"Is Blacklist" = false
 
 				[world.blossom_trees.red.biome_config.biomes]
@@ -1636,6 +1334,308 @@
 		"Passive Teleport Chance" = 0.2
 		"Endermite Spawn Chance" = 0.01
 		"Teleport Duplication Chance" = 0.01
+
+[mobs]
+	Foxhound = true
+	Wraith = true
+	Crabs = true
+	Forgotten = true
+	Shiba = true
+	Stonelings = true
+	Toretoise = true
+
+	[mobs.foxhound]
+		#The chance coal will tame a foxhound
+		"Tame Chance" = 0.05
+		"Foxhounds Speed Up Furnaces" = true
+
+		[mobs.foxhound.spawn_config]
+			#Allowed values: (0,)
+			"Spawn Weight" = 30
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#Allowed values: [1,)
+			"Max Group Size" = 2
+
+			[mobs.foxhound.spawn_config.biomes]
+
+				[mobs.foxhound.spawn_config.biomes.tags]
+					"Biome Tags" = []
+					"Is Blacklist" = true
+
+				[mobs.foxhound.spawn_config.biomes.biomes]
+					Biomes = ["minecraft:nether_wastes", "minecraft:basalt_deltas"]
+					"Is Blacklist" = false
+
+		[mobs.foxhound.lesser_spawn_config]
+			"Max Cost" = 0.7
+			"Spawn Cost" = 0.15
+			#Allowed values: (0,)
+			"Spawn Weight" = 2
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#Allowed values: [1,)
+			"Max Group Size" = 1
+
+			[mobs.foxhound.lesser_spawn_config.biomes]
+
+				[mobs.foxhound.lesser_spawn_config.biomes.tags]
+					"Biome Tags" = []
+					"Is Blacklist" = true
+
+				[mobs.foxhound.lesser_spawn_config.biomes.biomes]
+					Biomes = ["minecraft:soul_sand_valley"]
+					"Is Blacklist" = false
+
+	[mobs.wraith]
+		#List of sound sets to use with wraiths.
+		#Three sounds must be provided per entry, separated by | (in the format idle|hurt|death). Leave blank for no sound (i.e. if a mob has no ambient noise)
+		"Wraith Sounds" = ["entity.sheep.ambient|entity.sheep.hurt|entity.sheep.death", "entity.cow.ambient|entity.cow.hurt|entity.cow.death", "entity.pig.ambient|entity.pig.hurt|entity.pig.death", "entity.chicken.ambient|entity.chicken.hurt|entity.chicken.death", "entity.horse.ambient|entity.horse.hurt|entity.horse.death", "entity.cat.ambient|entity.cat.hurt|entity.cat.death", "entity.wolf.ambient|entity.wolf.hurt|entity.wolf.death", "entity.villager.ambient|entity.villager.hurt|entity.villager.death", "entity.polar_bear.ambient|entity.polar_bear.hurt|entity.polar_bear.death", "entity.zombie.ambient|entity.zombie.hurt|entity.zombie.death", "entity.skeleton.ambient|entity.skeleton.hurt|entity.skeleton.death", "entity.spider.ambient|entity.spider.hurt|entity.spider.death", "|entity.creeper.hurt|entity.creeper.death", "entity.endermen.ambient|entity.endermen.hurt|entity.endermen.death", "entity.zombie_pig.ambient|entity.zombie_pig.hurt|entity.zombie_pig.death", "entity.witch.ambient|entity.witch.hurt|entity.witch.death", "entity.blaze.ambient|entity.blaze.hurt|entity.blaze.death", "entity.llama.ambient|entity.llama.hurt|entity.llama.death", "|quark:entity.stoneling.cry|quark:entity.stoneling.die", "quark:entity.frog.idle|quark:entity.frog.hurt|quark:entity.frog.die"]
+
+		[mobs.wraith.spawn_config]
+			"Max Cost" = 0.7
+			"Spawn Cost" = 0.15
+			#Allowed values: (0,)
+			"Spawn Weight" = 5
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#Allowed values: [1,)
+			"Max Group Size" = 3
+
+			[mobs.wraith.spawn_config.biomes]
+
+				[mobs.wraith.spawn_config.biomes.tags]
+					"Biome Tags" = []
+					"Is Blacklist" = true
+
+				[mobs.wraith.spawn_config.biomes.biomes]
+					Biomes = ["minecraft:soul_sand_valley"]
+					"Is Blacklist" = false
+
+	[mobs.crabs]
+		"Enable Brewing" = true
+		#Whether Resilience should be required for 'How Did We Get Here?' and (if brewing is enabled) 'A Furious Cocktail'.
+		#Keep this on when brewing is disabled if your pack adds an alternative source for the effect.
+		"Resilience Required For All Effects" = true
+
+		[mobs.crabs.spawn_config]
+			#Allowed values: (0,)
+			"Spawn Weight" = 5
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#Allowed values: [1,)
+			"Max Group Size" = 3
+
+			[mobs.crabs.spawn_config.biomes]
+
+				[mobs.crabs.spawn_config.biomes.tags]
+					"Biome Tags" = ["minecraft:is_beach"]
+					"Is Blacklist" = false
+
+				[mobs.crabs.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
+	[mobs.forgotten]
+		#This is the probability of a Skeleton that spawns under the height threshold being replaced with a Forgotten.
+		"Forgotten Spawn Rate" = 0.05
+		"Max Height For Spawn" = 0
+
+	[mobs.shiba]
+		"Ignore Areas With Skylight" = false
+
+		[mobs.shiba.spawn_config]
+			#Allowed values: (0,)
+			"Spawn Weight" = 40
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#Allowed values: [1,)
+			"Max Group Size" = 3
+
+			[mobs.shiba.spawn_config.biomes]
+
+				[mobs.shiba.spawn_config.biomes.tags]
+					"Biome Tags" = ["minecraft:is_mountain"]
+					"Is Blacklist" = false
+
+				[mobs.shiba.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
+	[mobs.stonelings]
+		"Max Y Level" = 0
+		"Enable Diamond Heart" = true
+		#When enabled, stonelings are much more aggressive in checking for players
+		"Cautious Stonelings" = false
+		"Tamable Stonelings" = true
+		#Disabled if if Pathfinder Maps are disabled.
+		"Weald Pathfinder Maps" = true
+
+		[mobs.stonelings.dimensions]
+			"Is Blacklist" = false
+			Dimensions = ["minecraft:overworld"]
+
+		[mobs.stonelings.spawn_config]
+			#Allowed values: (0,)
+			"Spawn Weight" = 80
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#Allowed values: [1,)
+			"Max Group Size" = 1
+
+			[mobs.stonelings.spawn_config.biomes]
+
+				[mobs.stonelings.spawn_config.biomes.tags]
+					"Biome Tags" = ["forge:is_void", "minecraft:is_nether", "minecraft:is_end"]
+					"Is Blacklist" = true
+
+				[mobs.stonelings.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
+	[mobs.toretoise]
+		"Max Y Level" = 0
+		#The number of ticks from mining a tortoise until feeding it could cause it to regrow.
+		"Cooldown Ticks" = 1200
+		#The items that can be fed to toretoises to make them regrow ores.
+		Foods = ["minecraft:glow_berries"]
+		"Allow Toretoise To Regrow" = true
+		#Feeding a toretoise after cooldown will regrow them with a one-in-this-number chance. Set to 1 to always regrow, higher = lower chance.
+		"Regrow Chance" = 3
+
+		[mobs.toretoise.dimensions]
+			"Is Blacklist" = false
+			Dimensions = ["minecraft:overworld"]
+
+		[mobs.toretoise.spawn_config]
+			#Allowed values: (0,)
+			"Spawn Weight" = 120
+			#Allowed values: [1,)
+			"Min Group Size" = 2
+			#Allowed values: [1,)
+			"Max Group Size" = 4
+
+			[mobs.toretoise.spawn_config.biomes]
+
+				[mobs.toretoise.spawn_config.biomes.tags]
+					"Biome Tags" = ["forge:is_void", "minecraft:is_nether", "minecraft:is_end"]
+					"Is Blacklist" = true
+
+				[mobs.toretoise.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
+[client]
+	Camera = true
+	"Elytra Indicator" = true
+	"Improved Tooltips" = true
+	"Greener Grass" = true
+	"Buckets Show Inhabitants" = true
+	"Soul Candles" = true
+	"Auto Walk Keybind" = true
+	"Variant Animal Textures" = true
+	"Microcrafting Helper" = true
+	"Uses For Curses" = true
+	"Wool Shuts Up Minecarts" = true
+	"Back Button Keybind" = true
+	"Chest Searching" = true
+	"Long Range Pick Block" = true
+	"Usage Ticker" = true
+
+	[client.camera]
+		#Date format that will be displayed in screenshots. Must be a valid one (i.e. MM/dd/yyyy)
+		"Date Format" = "MM/dd/yyyy"
+
+	[client.improved_tooltips]
+		"Attribute Tooltips" = true
+		"Food Tooltips" = true
+		"Shulker Tooltips" = true
+		"Map Tooltips" = true
+		"Enchanting Tooltips" = true
+		"Fuel Time Tooltips" = true
+		"Shulker Box Use Colors" = true
+		"Shulker Box Require Shift" = false
+		"Map Require Shift" = false
+		#The value of each shank of food.
+		#Tweak this when using mods like Hardcore Hunger which change that value.
+		"Food Divisor" = 2
+		"Show Saturation" = true
+		"Food Compression Threshold" = 4
+		"Fuel Time Divisor" = 200
+		#Should item attributes be colored relative to your current equipped item?
+		#e.g. if wearing an Iron Helmet, the armor value in a Diamond Helmet will show as green, and vice versa would be red.
+		#If set to false, item attributes will show in white or red if they're negative values.
+		"Show Upgrade Status" = true
+		"Animate Up Down Arrows" = true
+		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang", "supplementaries:slingshot", "supplementaries:bubble_blower", "farmersdelight:diamond_knife"]
+		#A list of additional stacks to display on each enchantment
+		#The format is as follows:
+		#enchant_id=item1,item2,item3...
+		#So to display a carrot on a stick on a mending book, for example, you use:
+		#minecraft:mending=minecraft:carrot_on_a_stick
+		"Enchanting Additional Stacks" = []
+
+	[client.greener_grass]
+		"Affect Leaves" = true
+		"Affect Water" = false
+		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:grass", "minecraft:potted_fern", "minecraft:sugar_cane", "environmental:giant_tall_grass", "valhelsia_structures:grass_block"]
+		"Leaves List" = ["minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:oak_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "atmospheric:rosewood_leaves", "atmospheric:morado_leaves", "atmospheric:yucca_leaves", "autumnity:maple_leaves", "environmental:willow_leaves", "environmental:hanging_willow_leaves", "minecraft:vine"]
+
+		[client.greener_grass.color_matrix]
+			R = [0.89, 0.0, 0.0]
+			G = [0.0, 1.11, 0.0]
+			B = [0.0, 0.0, 0.89]
+
+		[client.greener_grass.water_matrix]
+			R = [0.86, 0.0, 0.0]
+			G = [0.0, 1.0, 0.22]
+			B = [0.0, 0.0, 1.22]
+
+	[client.buckets_show_inhabitants]
+		"Show Axolotls" = true
+		"Show Crabs" = true
+		"Show Tropical Fish" = true
+		"Show Shiny Slime" = true
+
+	[client.auto_walk_keybind]
+		"Draw Hud" = true
+		"Hud Height" = 10
+
+	[client.variant_animal_textures]
+		"Enable Cow" = true
+		"Enable Pig" = true
+		"Enable Chicken" = true
+		"Enable Shiny Rabbit" = true
+		"Enable Shiny Llama" = true
+		"Enable Shiny Dolphin" = true
+		"Enable Shiny Slime" = true
+		"Enable L G B T Bees" = true
+		"Every Bee Is L G B T" = false
+		#The chance for an animal to have a special "Shiny" skin, like a shiny pokemon. This is 1 in X. Set to 0 to disable.
+		"Shiny Animal Chance" = 2048
+		#If a shiny animal should emit occasional sparkles.
+		"Shiny Sparkles" = true
+
+	[client.uses_for_curses]
+		"Vanish Pumpkin Overlay" = true
+		"Bind Armor Stands With Player Heads" = true
+
+	[client.chest_searching]
+
+		[client.chest_searching.overlay_color]
+			A = 0.67
+			R = 0.0
+			G = 0.0
+			B = 0.0
+
+	[client.usage_ticker]
+		#Switch the armor display to the off hand side and the hand display to the main hand side
+		Invert = false
+		"Shift Left" = 0
+		"Shift Right" = 0
+		"Enable Main Hand" = true
+		"Enable Off Hand" = true
+		"Enable Armor" = true
 
 [experimental]
 	#Allows placing variant blocks automatically via a selector menu triggered from a keybind
