@@ -1,0 +1,135 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "octagon"
+	filename: "spectacular_achivements"
+	group: ""
+	icon: "minecraft:nether_star"
+	id: "518860C0A79F8613"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Don't complete!"
+				""
+				"WIP for some fun Achivement Quests"
+			]
+			id: "11FF42F98BD84D1A"
+			tasks: [{
+				disable_toast: true
+				icon: "supplementaries:key"
+				id: "1CF2216CFC8C5D8C"
+				title: "-- LOCKED --"
+				type: "custom"
+			}]
+			title: "WIP Achivement Feature Locked"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5EC2F780B9703066"]
+			id: "7381AAC5A8DDBFC4"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "70968051392D81E9"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7381AAC5A8DDBFC4"]
+			id: "10795D3366A97D2C"
+			tasks: [{
+				count: 64L
+				id: "2AE31D99315BBF22"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10795D3366A97D2C"]
+			id: "48A8D97D56D379BD"
+			tasks: [{
+				count: 64L
+				id: "665E1F21DF14CD1B"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EC2F780B9703066"]
+			id: "441EDA4D293550F2"
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "2D3EAD65D28D017E"
+				type: "kill"
+				value: 10L
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5EC2F780B9703066"]
+			dependency_requirement: "all_started"
+			id: "7603ADE53B98A453"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				icon: "minecraft:skeleton_skull"
+				id: "1D5020085C49736A"
+				type: "kill"
+				value: 10L
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5EC2F780B9703066"]
+			id: "21EA3CF0934B1C38"
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_eye"
+				id: "53C6D62F057AAEFA"
+				type: "kill"
+				value: 10L
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5EC2F780B9703066"]
+			id: "29A27DB55F573BDF"
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: "minecraft:creeper_head"
+				id: "60E1DAB477AD62B3"
+				type: "kill"
+				value: 10L
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1CF2216CFC8C5D8C"
+				"11FF42F98BD84D1A"
+			]
+			id: "5EC2F780B9703066"
+			tasks: [{
+				id: "6C521B726841A61E"
+				title: "Start your journey!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "Spectacular Achivements"
+}
