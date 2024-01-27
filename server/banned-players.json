@@ -6,5 +6,13 @@
     "source": "Server",
     "expires": "forever",
     "reason": "Banned by an operator."
+  },
+  {
+    "uuid": "b2e8ea01-7a09-4eff-b7eb-1fd677fac7a6",
+    "name": "Knyrps",
+    "created": "2024-01-27 03:54:12 +0100",
+    "source": "Server",
+    "expires": "forever",
+    "reason": "Banned by an operator."
   }
 ]
