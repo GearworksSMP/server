@@ -17,12 +17,12 @@
 				position: [I;
 					227
 					94
-					64
+					52
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				title: "Checkpoint 1"
 				type: "location"
@@ -41,12 +41,12 @@
 				position: [I;
 					304
 					84
-					111
+					99
 				]
 				size: [I;
-					20
-					20
-					5
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -63,14 +63,14 @@
 				id: "5A3624FA9E096F2A"
 				ignore_dimension: false
 				position: [I;
-					353
+					341
 					81
 					193
 				]
 				size: [I;
-					1
-					20
-					20
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -89,12 +89,12 @@
 				position: [I;
 					375
 					117
-					294
+					282
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -113,12 +113,12 @@
 				position: [I;
 					475
 					120
-					297
+					285
 				]
 				size: [I;
-					1
-					20
-					20
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -135,14 +135,14 @@
 				id: "13C2CDE2E26666AD"
 				ignore_dimension: false
 				position: [I;
-					516
+					504
 					121
 					227
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -159,14 +159,14 @@
 				id: "1508A6CDB29C08E8"
 				ignore_dimension: false
 				position: [I;
-					521
+					509
 					76
 					108
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -183,14 +183,14 @@
 				id: "21C8C80F77402DF9"
 				ignore_dimension: false
 				position: [I;
-					428
+					416
 					119
 					-49
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -207,14 +207,14 @@
 				id: "51C02D4E26C27F9F"
 				ignore_dimension: false
 				position: [I;
-					372
+					360
 					122
-					-134
+					-146
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -233,12 +233,12 @@
 				position: [I;
 					254
 					123
-					-136
+					-148
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -257,12 +257,12 @@
 				position: [I;
 					140
 					149
-					-172
+					-184
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -281,12 +281,12 @@
 				position: [I;
 					48
 					157
-					-171
+					-183
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -303,14 +303,14 @@
 				id: "07B4FE58DAEB2D2D"
 				ignore_dimension: false
 				position: [I;
-					-24
+					-36
 					147
 					-105
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -327,14 +327,14 @@
 				id: "0113A868F3F8988B"
 				ignore_dimension: false
 				position: [I;
-					-4
+					-16
 					136
-					107
+					95
 				]
 				size: [I;
-					20
-					20
-					1
+					25
+					25
+					25
 				]
 				type: "location"
 			}]
@@ -479,14 +479,14 @@
 				id: "055FB4CC0B5E850C"
 				ignore_dimension: false
 				position: [I;
-					167
+					155
 					99
-					86
+					83
 				]
 				size: [I;
-					20
-					20
-					20
+					25
+					25
+					3
 				]
 				type: "location"
 			}]
@@ -633,6 +633,13 @@
 					command: "/ftbquests change_progress @p reset 4D2ACAC14C726C12"
 					id: "6F72307BD274B3E0"
 					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/tell @p Race progress reset"
+					id: "3BBADB5E9AF8E3A7"
 					team_reward: false
 					type: "command"
 				}
