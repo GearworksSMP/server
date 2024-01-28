@@ -8,8 +8,15 @@
 	quest_links: [ ]
 	quests: [
 		{
-			can_repeat: true
 			id: "31D90C1CB14D6986"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 166 86 58 air"
+				id: "07C3507C55ECEB03"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "30A9A44BBE89192F"
@@ -470,6 +477,14 @@
 					auto: "enabled"
 					command: "/ftbquests change_progress @p reset 4D2ACAC14C726C12"
 					id: "5280C7E420130E54"
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 166 86 58 minecraft:redstone_block"
+					id: "60E4B8523EFFF801"
+					silent: true
 					team_reward: false
 					type: "command"
 				}
