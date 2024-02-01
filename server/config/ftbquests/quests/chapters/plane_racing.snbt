@@ -9,14 +9,136 @@
 	quests: [
 		{
 			id: "31D90C1CB14D6986"
-			rewards: [{
-				auto: "enabled"
-				command: "/setblock 166 86 58 air"
-				id: "07C3507C55ECEB03"
-				silent: true
-				team_reward: false
-				type: "command"
-			}]
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/setblock 166 86 58 air"
+					id: "07C3507C55ECEB03"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 173 88 58 minecraft:redstone_block"
+					id: "167B18FAE404E0DB"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 172 88 58 air"
+					id: "70116F2518164C40"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 171 88 58 air"
+					id: "3735696847D8F888"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 170 88 58 air"
+					id: "1A9ECF8AE9B3D571"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 169 88 58 air"
+					id: "66885B8F4D3C3CFF"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 168 88 58 air"
+					id: "7DAB278871A71408"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 167 88 58 air"
+					id: "1365F72972137942"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 166 88 58 air"
+					id: "5DE38D4C0B5118C7"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 165 88 58 air"
+					id: "7E3046D76020E8F1"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 164 88 58 air"
+					id: "7A77F7F685292BBE"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 163 88 58 air"
+					id: "78D4F22A076FCECE"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 162 88 58 air"
+					id: "6D3A5DD5AD49A0AF"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 161 88 58 air"
+					id: "1BE3A20127C7C6A0"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 160 88 58 air"
+					id: "70D0A5B28738E35D"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 159 88 58 air"
+					id: "6C2AF5DA0FA23B09"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "30A9A44BBE89192F"
@@ -38,9 +160,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["31D90C1CB14D6986"]
 			id: "79290424613E1660"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 172 88 58 minecraft:redstone_block"
+				id: "44592C19BE580826"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "5BBCD3DDB6800BC0"
@@ -62,9 +191,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["79290424613E1660"]
 			id: "2A63CB277E8876F5"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 171 88 58 minecraft:redstone_block"
+				id: "7D37B7245EF7FDC8"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "5A3624FA9E096F2A"
@@ -86,9 +222,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["2A63CB277E8876F5"]
 			id: "6A2AE0AC2E54421B"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 170 88 58 minecraft:redstone_block"
+				id: "55D69D4D71D7B5BC"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "25C4515C424CEA58"
@@ -110,9 +253,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["6A2AE0AC2E54421B"]
 			id: "20F21F387DB00E6D"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 169 88 58 minecraft:redstone_block"
+				id: "12F57BCB253B5843"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "2BB74B044A60866E"
@@ -134,9 +284,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["20F21F387DB00E6D"]
 			id: "1C6F2B1B215EC282"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 168 88 58 minecraft:redstone_block"
+				id: "4871A4FFE6F577A8"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "13C2CDE2E26666AD"
@@ -158,9 +315,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["1C6F2B1B215EC282"]
 			id: "2E404CC4209D5B10"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 167 88 58 minecraft:redstone_block"
+				id: "127F2019D126043E"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "1508A6CDB29C08E8"
@@ -182,9 +346,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["2E404CC4209D5B10"]
 			id: "67007C3AFCC60D7D"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 166 88 58 minecraft:redstone_block"
+				id: "156DAC1F13752CF6"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "21C8C80F77402DF9"
@@ -206,9 +377,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["67007C3AFCC60D7D"]
 			id: "60BD166667C3004D"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 165 88 58 minecraft:redstone_block"
+				id: "479FE168FC831321"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "51C02D4E26C27F9F"
@@ -230,9 +408,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["60BD166667C3004D"]
 			id: "0180F3F7768EEA6C"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 164 88 58 minecraft:redstone_block"
+				id: "12887BA35AFB8AAF"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "510A29E09C0E7F08"
@@ -254,9 +439,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["0180F3F7768EEA6C"]
 			id: "2D80C706D3C1541F"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 163 88 58 minecraft:redstone_block"
+				id: "3EBF43D3222D42D1"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "60E3B176E3FE25FB"
@@ -278,9 +470,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["2D80C706D3C1541F"]
 			id: "41E2C3520DED7FEC"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 162 88 58 minecraft:redstone_block"
+				id: "28365B13D90CAB22"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "128D2EC47058B744"
@@ -302,9 +501,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["41E2C3520DED7FEC"]
 			id: "79FBA04FC8402897"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 161 88 58 minecraft:redstone_block"
+				id: "3949A3578C66AA10"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "07B4FE58DAEB2D2D"
@@ -326,9 +532,16 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["79FBA04FC8402897"]
 			id: "490E26871E40A52A"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 160 88 58 minecraft:redstone_block"
+				id: "0D19E4D302CC6F36"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "0113A868F3F8988B"
@@ -350,7 +563,6 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["490E26871E40A52A"]
 			id: "4D2ACAC14C726C12"
 			rewards: [
@@ -359,13 +571,6 @@
 					command: "/ftbquests change_progress @p reset 31D90C1CB14D6986"
 					id: "01EA4E93836E58FF"
 					silent: true
-					team_reward: false
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/say @p finished the course!"
-					id: "7EAA05E0AC507F68"
 					team_reward: false
 					type: "command"
 				}
@@ -488,6 +693,14 @@
 					team_reward: false
 					type: "command"
 				}
+				{
+					auto: "enabled"
+					command: "/setblock 159 88 58 minecraft:redstone_block"
+					id: "1FB7FE2CC488A16E"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
 			]
 			tasks: [{
 				dimension: "minecraft:overworld"
@@ -501,7 +714,7 @@
 				size: [I;
 					25
 					25
-					3
+					25
 				]
 				type: "location"
 			}]
