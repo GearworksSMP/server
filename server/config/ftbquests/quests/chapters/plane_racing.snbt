@@ -1,0 +1,887 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "plane_racing"
+	group: ""
+	id: "60C149B1D0E6E0BE"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "31D90C1CB14D6986"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/setblock 166 86 58 air"
+					id: "07C3507C55ECEB03"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 173 88 58 minecraft:redstone_block"
+					id: "167B18FAE404E0DB"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 172 88 58 air"
+					id: "70116F2518164C40"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 171 88 58 air"
+					id: "3735696847D8F888"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 170 88 58 air"
+					id: "1A9ECF8AE9B3D571"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 169 88 58 air"
+					id: "66885B8F4D3C3CFF"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 168 88 58 air"
+					id: "7DAB278871A71408"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 167 88 58 air"
+					id: "1365F72972137942"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 166 88 58 air"
+					id: "5DE38D4C0B5118C7"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 165 88 58 air"
+					id: "7E3046D76020E8F1"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 164 88 58 air"
+					id: "7A77F7F685292BBE"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 163 88 58 air"
+					id: "78D4F22A076FCECE"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 162 88 58 air"
+					id: "6D3A5DD5AD49A0AF"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 161 88 58 air"
+					id: "1BE3A20127C7C6A0"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 160 88 58 air"
+					id: "70D0A5B28738E35D"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 159 88 58 air"
+					id: "6C2AF5DA0FA23B09"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "30A9A44BBE89192F"
+				ignore_dimension: false
+				position: [I;
+					227
+					94
+					52
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				title: "Checkpoint 1"
+				type: "location"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["31D90C1CB14D6986"]
+			id: "79290424613E1660"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 172 88 58 minecraft:redstone_block"
+				id: "44592C19BE580826"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "5BBCD3DDB6800BC0"
+				ignore_dimension: false
+				position: [I;
+					304
+					84
+					99
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 2"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["79290424613E1660"]
+			id: "2A63CB277E8876F5"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 171 88 58 minecraft:redstone_block"
+				id: "7D37B7245EF7FDC8"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "5A3624FA9E096F2A"
+				ignore_dimension: false
+				position: [I;
+					341
+					81
+					193
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 3"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2A63CB277E8876F5"]
+			id: "6A2AE0AC2E54421B"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 170 88 58 minecraft:redstone_block"
+				id: "55D69D4D71D7B5BC"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "25C4515C424CEA58"
+				ignore_dimension: false
+				position: [I;
+					375
+					117
+					282
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 4"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A2AE0AC2E54421B"]
+			id: "20F21F387DB00E6D"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 169 88 58 minecraft:redstone_block"
+				id: "12F57BCB253B5843"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "2BB74B044A60866E"
+				ignore_dimension: false
+				position: [I;
+					475
+					120
+					285
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 5"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["20F21F387DB00E6D"]
+			id: "1C6F2B1B215EC282"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 168 88 58 minecraft:redstone_block"
+				id: "4871A4FFE6F577A8"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "13C2CDE2E26666AD"
+				ignore_dimension: false
+				position: [I;
+					504
+					121
+					227
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 6"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C6F2B1B215EC282"]
+			id: "2E404CC4209D5B10"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 167 88 58 minecraft:redstone_block"
+				id: "127F2019D126043E"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "1508A6CDB29C08E8"
+				ignore_dimension: false
+				position: [I;
+					509
+					76
+					108
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 7"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2E404CC4209D5B10"]
+			id: "67007C3AFCC60D7D"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 166 88 58 minecraft:redstone_block"
+				id: "156DAC1F13752CF6"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "21C8C80F77402DF9"
+				ignore_dimension: false
+				position: [I;
+					416
+					119
+					-49
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 8"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["67007C3AFCC60D7D"]
+			id: "60BD166667C3004D"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 165 88 58 minecraft:redstone_block"
+				id: "479FE168FC831321"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "51C02D4E26C27F9F"
+				ignore_dimension: false
+				position: [I;
+					360
+					122
+					-146
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 9"
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["60BD166667C3004D"]
+			id: "0180F3F7768EEA6C"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 164 88 58 minecraft:redstone_block"
+				id: "12887BA35AFB8AAF"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "510A29E09C0E7F08"
+				ignore_dimension: false
+				position: [I;
+					254
+					123
+					-148
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 10"
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0180F3F7768EEA6C"]
+			id: "2D80C706D3C1541F"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 163 88 58 minecraft:redstone_block"
+				id: "3EBF43D3222D42D1"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "60E3B176E3FE25FB"
+				ignore_dimension: false
+				position: [I;
+					140
+					149
+					-184
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 11"
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2D80C706D3C1541F"]
+			id: "41E2C3520DED7FEC"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 162 88 58 minecraft:redstone_block"
+				id: "28365B13D90CAB22"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "128D2EC47058B744"
+				ignore_dimension: false
+				position: [I;
+					48
+					157
+					-183
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 12"
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41E2C3520DED7FEC"]
+			id: "79FBA04FC8402897"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 161 88 58 minecraft:redstone_block"
+				id: "3949A3578C66AA10"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "07B4FE58DAEB2D2D"
+				ignore_dimension: false
+				position: [I;
+					-36
+					147
+					-105
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 13"
+			x: 14.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["79FBA04FC8402897"]
+			id: "490E26871E40A52A"
+			rewards: [{
+				auto: "enabled"
+				command: "/setblock 160 88 58 minecraft:redstone_block"
+				id: "0D19E4D302CC6F36"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "0113A868F3F8988B"
+				ignore_dimension: false
+				position: [I;
+					-16
+					136
+					95
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 14"
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["490E26871E40A52A"]
+			id: "4D2ACAC14C726C12"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 31D90C1CB14D6986"
+					id: "01EA4E93836E58FF"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 79290424613E1660"
+					id: "35851C4FBC68F8DE"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 2A63CB277E8876F5"
+					id: "4B67395EB78940B9"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 6A2AE0AC2E54421B"
+					id: "14C5504BACE16035"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 20F21F387DB00E6D"
+					id: "1C3F374DB78EE8FB"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 1C6F2B1B215EC282"
+					id: "0973238836189636"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 2E404CC4209D5B10"
+					id: "5294945539A40947"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 67007C3AFCC60D7D"
+					id: "1646F006BFE9CE5F"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 60BD166667C3004D"
+					id: "153D485293110E4D"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 0180F3F7768EEA6C"
+					id: "2DDAA0B8D543BAAE"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 2D80C706D3C1541F"
+					id: "386884240583C1F3"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 41E2C3520DED7FEC"
+					id: "06B781640B5143BE"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 79FBA04FC8402897"
+					id: "4CB71520416C7C0E"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 490E26871E40A52A"
+					id: "0E27BD525E328AB3"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 4D2ACAC14C726C12"
+					id: "5280C7E420130E54"
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 166 86 58 minecraft:redstone_block"
+					id: "60E4B8523EFFF801"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/setblock 159 88 58 minecraft:redstone_block"
+					id: "1FB7FE2CC488A16E"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "055FB4CC0B5E850C"
+				ignore_dimension: false
+				position: [I;
+					155
+					99
+					83
+				]
+				size: [I;
+					25
+					25
+					25
+				]
+				type: "location"
+			}]
+			title: "Checkpoint 15"
+			x: 17.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			disable_toast: true
+			icon: "create_things_and_misc:train_sing_yellow_2"
+			id: "39EB2A4B26A41684"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 60E6018FA8640F89"
+					id: "448BF6A872309C30"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 39EB2A4B26A41684"
+					id: "492C14ED8EAA696B"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 31D90C1CB14D6986"
+					id: "407C112FEAC50E1E"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 79290424613E1660"
+					id: "66C5A518A1DE5CA2"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 2A63CB277E8876F5"
+					id: "47BE39BC6B09E2D7"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 6A2AE0AC2E54421B"
+					id: "1834795962C53AF1"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 20F21F387DB00E6D"
+					id: "49B94ADB14660586"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 1C6F2B1B215EC282"
+					id: "513196D2EDD4BA84"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 2E404CC4209D5B10"
+					id: "39960DFD7B4A3746"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 67007C3AFCC60D7D"
+					id: "62BF7D30F5506898"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 60BD166667C3004D"
+					id: "7456827E10655715"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 0180F3F7768EEA6C"
+					id: "3EE9E266E549533A"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 2D80C706D3C1541F"
+					id: "2482F22FB24ABC0D"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 41E2C3520DED7FEC"
+					id: "4159B6FB5BF615A7"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 79FBA04FC8402897"
+					id: "65B313C98E83E9D5"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 490E26871E40A52A"
+					id: "25616E7CD1200E8A"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @p reset 4D2ACAC14C726C12"
+					id: "6F72307BD274B3E0"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/tell @p Race progress reset"
+					id: "3BBADB5E9AF8E3A7"
+					team_reward: false
+					type: "command"
+				}
+			]
+			subtitle: "Click the checkmark above to reset the race progress"
+			tasks: [{
+				id: "60E6018FA8640F89"
+				title: "Reset"
+				type: "checkmark"
+			}]
+			title: "Reset Progress"
+			x: -3.5d
+			y: 1.0d
+		}
+	]
+	title: "Plane Racing"
+}
