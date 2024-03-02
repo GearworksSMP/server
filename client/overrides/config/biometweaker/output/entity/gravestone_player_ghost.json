@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "gravestone:player_ghost",
+  "category": "MONSTER",
+  "fire_immune": false,
+  "summonable": true,
+  "spawn_far_from_player": false,
+  "tracking_range": 5,
+  "update_interval": 3,
+  "defaul_loot_table": "gravestone:entities/player_ghost",
+  "size": {
+    "height": 1.95,
+    "width": 0.6,
+    "fixed": false
+  }
+}

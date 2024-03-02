@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "iceandfire:fire_dragon",
+  "category": "CREATURE",
+  "fire_immune": true,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 256,
+  "update_interval": 3,
+  "defaul_loot_table": "iceandfire:entities/fire_dragon",
+  "size": {
+    "height": 1.2,
+    "width": 0.78,
+    "fixed": false
+  }
+}

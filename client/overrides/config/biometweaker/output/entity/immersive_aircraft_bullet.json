@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "immersive_aircraft:bullet",
+  "category": "MISC",
+  "fire_immune": true,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 6,
+  "update_interval": 10,
+  "defaul_loot_table": "immersive_aircraft:entities/bullet",
+  "size": {
+    "height": 0.25,
+    "width": 0.25,
+    "fixed": false
+  }
+}

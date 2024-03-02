@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "dungeons_mobs:summon_spot",
+  "category": "MISC",
+  "fire_immune": true,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 10,
+  "update_interval": 3,
+  "defaul_loot_table": "dungeons_mobs:entities/summon_spot",
+  "size": {
+    "height": 2.0,
+    "width": 1.0,
+    "fixed": false
+  }
+}

@@ -1,0 +1,14 @@
+
+{
+  "registry_name": "minecraft:the_nether",
+  "dimension": {
+    "type": "minecraft:the_nether",
+    "generator": {
+      "biome_source": {
+        "type": "byg:nether"
+      },
+      "settings": "minecraft:nether",
+      "type": "minecraft:noise"
+    }
+  }
+}

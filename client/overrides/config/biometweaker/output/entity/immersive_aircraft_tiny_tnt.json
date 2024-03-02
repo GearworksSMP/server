@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "immersive_aircraft:tiny_tnt",
+  "category": "MISC",
+  "fire_immune": true,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 6,
+  "update_interval": 10,
+  "defaul_loot_table": "immersive_aircraft:entities/tiny_tnt",
+  "size": {
+    "height": 0.375,
+    "width": 0.375,
+    "fixed": false
+  }
+}
