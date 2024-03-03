@@ -92,7 +92,7 @@
 	#Whether the void worm boss is summonable or not, via the mysterious worm item.
 	voidWormSummonable = true
 	#Whether seagulls should steal food out of players' hotbar slots.
-	seagullStealing = false
+	seagullStealing = true
 	#List of items that seagulls cannot take from players.
 	seagullStealingBlacklist = []
 	#Whether the Clinging Potion effect should flip the screen. Warning: may cause nausea.
@@ -654,10 +654,10 @@
 			#Range: -64 ~ 320
 			blobfishSpawnHeight = 25
 			#Whether to enable beached cachalot whales to spawn on beaches during thunder storms.
-			beachedCachalotWhales = false
+			beachedCachalotWhales = true
 			#Percent chance increase for each failed attempt to spawn a beached cachalot whale. Higher value = more spawns.
 			#Range: 0 ~ 100
-			beachedCachalotWhaleSpawnChance = 0
+			beachedCachalotWhaleSpawnChance = 5
 			#Delay (in ticks) between attempts to spawn beached cachalot whales. Default is a single day. Works like wandering traders.
 			#Range: > 0
 			beachedCachalotWhaleSpawnDelay = 24000
