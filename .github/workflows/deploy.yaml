@@ -80,6 +80,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           allenvs: true
+          request_pty: true
           script: |
             cd /community/
             chown -R root:root .
