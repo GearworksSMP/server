@@ -80,7 +80,7 @@ jobs:
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/server.properties
 
       - name: copy user_jvm_args.txt
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/user_jvm_args.txt ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/user_jvm_args.txt
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/user_jvm_args.dev.txt ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/user_jvm_args.txt
 
       - name: copy whitelist.json
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.dev.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/whitelist.json
