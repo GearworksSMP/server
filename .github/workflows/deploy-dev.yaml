@@ -115,5 +115,4 @@ jobs:
             cd /community-development/
             chown -R root:root .
             chmod +x ./minecraft.sh
-            /root/.bashrc
-            ./minecraft.sh start
+            sudo ./minecraft.sh start
