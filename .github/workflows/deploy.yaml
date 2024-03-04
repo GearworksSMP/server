@@ -24,6 +24,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
+          request_pty: true
           script: |
             cd /community/
             chown -R root:root .
