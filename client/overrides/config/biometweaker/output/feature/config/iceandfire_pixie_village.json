@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "iceandfire:pixie_village",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "iceandfire:pixie_village"
+  }
+}

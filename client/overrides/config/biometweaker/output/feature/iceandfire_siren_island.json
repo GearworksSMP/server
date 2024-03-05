@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "iceandfire:siren_island",
+  "worldgen/placed_feature": {
+    "feature": "iceandfire:siren_island",
+    "placement": [
+      {
+        "heightmap": "WORLD_SURFACE_WG",
+        "type": "minecraft:heightmap"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

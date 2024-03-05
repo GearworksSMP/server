@@ -1,0 +1,12 @@
+
+{
+  "registry_name": "iceandfire:lightning_dragon_cave",
+  "worldgen/placed_feature": {
+    "feature": "iceandfire:lightning_dragon_cave",
+    "placement": [
+      {
+        "type": "iceandfire:biome_extended"
+      }
+    ]
+  }
+}

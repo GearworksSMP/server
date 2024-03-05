@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "dungeons_mobs:mage_missile",
+  "category": "MISC",
+  "fire_immune": true,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 5,
+  "update_interval": 1,
+  "defaul_loot_table": "dungeons_mobs:entities/mage_missile",
+  "size": {
+    "height": 0.35,
+    "width": 0.35,
+    "fixed": false
+  }
+}

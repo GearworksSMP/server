@@ -1,0 +1,13 @@
+
+{
+  "registry_name": "create_dd:dark",
+  "worldgen/configured_feature": {
+    "config": {
+      "height": 64,
+      "state": {
+        "Name": "create_dd:pondering_block_dark"
+      }
+    },
+    "type": "minecraft:fill_layer"
+  }
+}

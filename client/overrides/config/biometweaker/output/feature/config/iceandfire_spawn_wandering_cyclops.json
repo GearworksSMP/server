@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "iceandfire:spawn_wandering_cyclops",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "iceandfire:spawn_wandering_cyclops"
+  }
+}

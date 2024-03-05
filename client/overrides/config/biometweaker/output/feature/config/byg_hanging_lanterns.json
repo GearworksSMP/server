@@ -1,0 +1,33 @@
+
+{
+  "registry_name": "byg:hanging_lanterns",
+  "worldgen/configured_feature": {
+    "config": {
+      "min_length": 1,
+      "max_length": 5,
+      "placement_filter": {
+        "blocks": "byg:scoria_stone",
+        "type": "minecraft:matching_blocks"
+      },
+      "base_block_provider": {
+        "state": {
+          "Name": "byg:scoria_stone"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "block_provider": {
+        "state": {
+          "Name": "minecraft:cave_air"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "end_block_provider": {
+        "state": {
+          "Name": "byg:wailing_bell_blossom"
+        },
+        "type": "minecraft:simple_state_provider"
+      }
+    },
+    "type": "byg:hanging_feature"
+  }
+}

@@ -1,0 +1,39 @@
+
+{
+  "registry_name": "supplementaries:cave_urns",
+  "worldgen/placed_feature": {
+    "feature": "supplementaries:cave_urns",
+    "placement": [
+      {
+        "count": 8,
+        "type": "minecraft:count"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "height": {
+          "min_inclusive": {
+            "above_bottom": 16
+          },
+          "max_inclusive": {
+            "above_bottom": 96
+          },
+          "type": "minecraft:uniform"
+        },
+        "type": "minecraft:height_range"
+      },
+      {
+        "heightmaps": [
+          "MOTION_BLOCKING_NO_LEAVES",
+          "OCEAN_FLOOR_WG"
+        ],
+        "below_sea_level": true,
+        "type": "supplementaries:cave"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

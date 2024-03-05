@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "iceandfire:spawn_hippocampus",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "iceandfire:spawn_hippocampus"
+  }
+}

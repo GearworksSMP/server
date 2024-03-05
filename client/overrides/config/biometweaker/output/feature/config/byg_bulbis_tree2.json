@@ -1,0 +1,84 @@
+
+{
+  "registry_name": "byg:bulbis_tree2",
+  "worldgen/configured_feature": {
+    "config": {
+      "decorators": [
+        {
+          "block_provider": {
+            "entries": [
+              {
+                "data": {
+                  "Name": "byg:purple_shroomlight"
+                },
+                "weight": 1
+              }
+            ],
+            "type": "minecraft:weighted_state_provider"
+          },
+          "required_empty_blocks": 2,
+          "directions": [
+            "down"
+          ],
+          "probability": 0.2,
+          "exclusion_radius_xz": 2,
+          "exclusion_radius_y": 0,
+          "type": "minecraft:attached_to_leaves"
+        }
+      ],
+      "place_from_nbt": [],
+      "leaves_target": [
+        "byg:bulbis_shell"
+      ],
+      "can_grow_on_filter": {
+        "tag": "byg:may_place_on/bulbis_oddity",
+        "type": "minecraft:matching_block_tag"
+      },
+      "can_leaves_place_filter": {
+        "type": "minecraft:replaceable"
+      },
+      "log_provider": {
+        "state": {
+          "Properties": {
+            "axis": "y"
+          },
+          "Name": "byg:bulbis_stem"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "leaves_provider": {
+        "entries": [
+          {
+            "data": {
+              "Properties": {
+                "west": "true",
+                "up": "true",
+                "south": "true",
+                "north": "true",
+                "east": "true",
+                "down": "true"
+              },
+              "Name": "byg:bulbis_shell"
+            },
+            "weight": 1
+          }
+        ],
+        "type": "minecraft:weighted_state_provider"
+      },
+      "log_target": [
+        "byg:bulbis_stem",
+        "byg:bulbis_wood"
+      ],
+      "base_location": "byg:features/trees/bulbis/bulbis_trunk2",
+      "canopy_location": "byg:features/trees/bulbis/bulbis_canopy2",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": 8,
+          "max_inclusive": 15
+        }
+      }
+    },
+    "type": "corgilib:tree_from_nbt"
+  }
+}

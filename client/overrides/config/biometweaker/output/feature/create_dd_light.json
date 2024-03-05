@@ -1,0 +1,22 @@
+
+{
+  "registry_name": "create_dd:light",
+  "worldgen/placed_feature": {
+    "feature": "create_dd:light",
+    "placement": [
+      {
+        "xz_spread": 8,
+        "y_spread": 0,
+        "type": "minecraft:random_offset"
+      },
+      {
+        "type": "minecraft:biome"
+      },
+      {
+        "xz_spread": -8,
+        "y_spread": 0,
+        "type": "minecraft:random_offset"
+      }
+    ]
+  }
+}

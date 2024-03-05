@@ -1,0 +1,35 @@
+
+{
+  "registry_name": "byg:swamp_grass_block_delta",
+  "worldgen/configured_feature": {
+    "config": {
+      "contents": {
+        "Properties": {
+          "level": "0"
+        },
+        "Name": "minecraft:water"
+      },
+      "rim": {
+        "Properties": {
+          "snowy": "false"
+        },
+        "Name": "minecraft:grass_block"
+      },
+      "size": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 10,
+          "max_inclusive": 15
+        }
+      },
+      "rim_size": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 3
+        }
+      }
+    },
+    "type": "minecraft:delta_feature"
+  }
+}

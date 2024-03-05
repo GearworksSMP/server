@@ -73,6 +73,9 @@ jobs:
       - name: copy world settings
         run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/ --delete
 
+      - name: copy datapacks
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/datapacks ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/ --delete
+
       - name: Restart Server
         uses: appleboy/ssh-action@master
         with:

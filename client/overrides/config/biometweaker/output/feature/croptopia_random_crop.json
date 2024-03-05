@@ -1,0 +1,23 @@
+
+{
+  "registry_name": "croptopia:random_crop",
+  "worldgen/placed_feature": {
+    "feature": "croptopia:random_crop",
+    "placement": [
+      {
+        "count": 3,
+        "type": "minecraft:count"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "heightmap": "WORLD_SURFACE_WG",
+        "type": "minecraft:heightmap"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

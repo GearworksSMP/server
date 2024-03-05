@@ -1,0 +1,29 @@
+
+{
+  "registry_name": "byg:maple_taiga_trees",
+  "worldgen/configured_feature": {
+    "config": {
+      "features": [
+        {
+          "feature": {
+            "feature": "byg:silver_maple_trees",
+            "placement": []
+          },
+          "chance": 0.1
+        },
+        {
+          "feature": {
+            "feature": "byg:red_maple_trees",
+            "placement": []
+          },
+          "chance": 0.35
+        }
+      ],
+      "default": {
+        "feature": "byg:maple_trees",
+        "placement": []
+      }
+    },
+    "type": "minecraft:random_selector"
+  }
+}

@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "dungeons_mobs:skeleton_vanguard",
+  "category": "MONSTER",
+  "fire_immune": false,
+  "summonable": true,
+  "spawn_far_from_player": false,
+  "tracking_range": 8,
+  "update_interval": 3,
+  "defaul_loot_table": "dungeons_mobs:entities/skeleton_vanguard",
+  "size": {
+    "height": 2.1890001,
+    "width": 0.66,
+    "fixed": false
+  }
+}

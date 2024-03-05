@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "iceandfire:spawn_death_worm",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "iceandfire:spawn_death_worm"
+  }
+}

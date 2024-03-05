@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "waddles:adelie_penguin",
+  "category": "CREATURE",
+  "fire_immune": false,
+  "summonable": true,
+  "spawn_far_from_player": true,
+  "tracking_range": 64,
+  "update_interval": 1,
+  "defaul_loot_table": "waddles:entities/adelie_penguin",
+  "size": {
+    "height": 0.95,
+    "width": 0.4,
+    "fixed": false
+  }
+}

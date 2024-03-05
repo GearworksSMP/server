@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "iceandfire:siren_island",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "iceandfire:siren_island"
+  }
+}

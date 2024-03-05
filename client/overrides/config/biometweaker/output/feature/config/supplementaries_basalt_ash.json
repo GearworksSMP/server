@@ -1,0 +1,54 @@
+
+{
+  "registry_name": "supplementaries:basalt_ash",
+  "worldgen/configured_feature": {
+    "config": {
+      "target_predicate": {
+        "block_state": {
+          "Properties": {
+            "axis": "y"
+          },
+          "Name": "minecraft:basalt"
+        },
+        "predicate_type": "minecraft:blockstate_match"
+      },
+      "top_block": {
+        "source": {
+          "state": {
+            "Properties": {
+              "layers": "1"
+            },
+            "Name": "supplementaries:ash"
+          },
+          "type": "minecraft:simple_state_provider"
+        },
+        "property": "layers",
+        "values": {
+          "distribution": [
+            {
+              "data": 1,
+              "weight": 11
+            },
+            {
+              "data": 2,
+              "weight": 4
+            },
+            {
+              "data": 3,
+              "weight": 1
+            }
+          ],
+          "type": "minecraft:weighted_list"
+        },
+        "type": "minecraft:randomized_int_state_provider"
+      },
+      "below_block": {
+        "Name": "supplementaries:ashen_basalt"
+      },
+      "tries": 36,
+      "xz_spread": 6,
+      "y_spread": 6
+    },
+    "type": "supplementaries:surface_scan_random_patch"
+  }
+}

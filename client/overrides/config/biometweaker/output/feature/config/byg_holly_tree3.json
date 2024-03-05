@@ -1,0 +1,69 @@
+
+{
+  "registry_name": "byg:holly_tree3",
+  "worldgen/configured_feature": {
+    "config": {
+      "max_log_depth": 6,
+      "place_from_nbt": [],
+      "leaves_target": [
+        "byg:holly_leaves"
+      ],
+      "can_grow_on_filter": {
+        "tag": "byg:may_place_on/holly_sapling",
+        "type": "minecraft:matching_block_tag"
+      },
+      "can_leaves_place_filter": {
+        "type": "minecraft:replaceable"
+      },
+      "log_provider": {
+        "state": {
+          "Properties": {
+            "axis": "y"
+          },
+          "Name": "byg:holly_log"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "leaves_provider": {
+        "entries": [
+          {
+            "data": {
+              "Properties": {
+                "waterlogged": "false",
+                "persistent": "false",
+                "distance": "7"
+              },
+              "Name": "byg:holly_leaves"
+            },
+            "weight": 7
+          },
+          {
+            "data": {
+              "Properties": {
+                "waterlogged": "false",
+                "persistent": "false",
+                "distance": "7"
+              },
+              "Name": "byg:holly_berry_leaves"
+            },
+            "weight": 1
+          }
+        ],
+        "type": "minecraft:weighted_state_provider"
+      },
+      "log_target": [
+        "byg:holly_log"
+      ],
+      "base_location": "byg:features/trees/holly/holly_trunk3",
+      "canopy_location": "byg:features/trees/holly/holly_canopy3",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": 2,
+          "max_inclusive": 12
+        }
+      }
+    },
+    "type": "corgilib:tree_from_nbt"
+  }
+}

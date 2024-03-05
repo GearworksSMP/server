@@ -1,0 +1,26 @@
+
+{
+  "registry_name": "byg:imparius_grove_delta",
+  "worldgen/configured_feature": {
+    "config": {
+      "contents": {
+        "Properties": {
+          "level": "0"
+        },
+        "Name": "minecraft:water"
+      },
+      "rim": {
+        "Name": "byg:imparius_phylium"
+      },
+      "size": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 7,
+          "max_inclusive": 15
+        }
+      },
+      "rim_size": 1
+    },
+    "type": "minecraft:delta_feature"
+  }
+}

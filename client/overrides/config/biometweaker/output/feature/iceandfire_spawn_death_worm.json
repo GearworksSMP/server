@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "iceandfire:spawn_death_worm",
+  "worldgen/placed_feature": {
+    "feature": "iceandfire:spawn_death_worm",
+    "placement": [
+      {
+        "heightmap": "WORLD_SURFACE_WG",
+        "type": "minecraft:heightmap"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

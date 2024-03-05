@@ -1,0 +1,53 @@
+
+{
+  "registry_name": "byg:dead_willow_tree1",
+  "worldgen/configured_feature": {
+    "config": {
+      "max_log_depth": 10,
+      "place_from_nbt": [],
+      "leaves_target": [
+        "byg:willow_leaves"
+      ],
+      "can_grow_on_filter": {
+        "tag": "byg:may_place_on/willow_sapling",
+        "type": "minecraft:matching_block_tag"
+      },
+      "can_leaves_place_filter": {
+        "type": "minecraft:replaceable"
+      },
+      "log_provider": {
+        "state": {
+          "Properties": {
+            "axis": "y"
+          },
+          "Name": "byg:willow_log"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "leaves_provider": {
+        "state": {
+          "Properties": {
+            "waterlogged": "false",
+            "persistent": "false",
+            "distance": "7"
+          },
+          "Name": "byg:willow_leaves"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "log_target": [
+        "byg:willow_log"
+      ],
+      "base_location": "byg:features/trees/willow/dead_willow_trunk",
+      "canopy_location": "byg:features/trees/willow/dead_willow_canopy",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": 5,
+          "max_inclusive": 7
+        }
+      }
+    },
+    "type": "corgilib:tree_from_nbt"
+  }
+}

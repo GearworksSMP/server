@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "iceandfire:spawn_dragon_skeleton_fire",
+  "worldgen/placed_feature": {
+    "feature": "iceandfire:spawn_dragon_skeleton_fire",
+    "placement": [
+      {
+        "heightmap": "WORLD_SURFACE_WG",
+        "type": "minecraft:heightmap"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+
+{
+  "registry_name": "create_dd:striated_ores_badlands",
+  "worldgen/placed_feature": {
+    "feature": "create_dd:striated_ores_badlands",
+    "placement": [
+      {
+        "entry": "create_dd:striated_ores_badlands",
+        "type": "create_dd:config_driven"
+      }
+    ]
+  }
+}

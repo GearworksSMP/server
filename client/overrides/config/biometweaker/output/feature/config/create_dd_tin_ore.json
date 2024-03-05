@@ -1,0 +1,31 @@
+
+{
+  "registry_name": "create_dd:tin_ore",
+  "worldgen/configured_feature": {
+    "config": {
+      "entry": "create_dd:tin_ore",
+      "discard_chance_on_air_exposure": 0.0,
+      "targets": [
+        {
+          "target": {
+            "tag": "minecraft:stone_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "create_dd:tin_ore"
+          }
+        },
+        {
+          "target": {
+            "tag": "minecraft:deepslate_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "create_dd:deepslate_tin_ore"
+          }
+        }
+      ]
+    },
+    "type": "create_dd:standard_ore"
+  }
+}

@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "iceandfire:lightning_dragon_cave",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "iceandfire:lightning_dragon_cave"
+  }
+}

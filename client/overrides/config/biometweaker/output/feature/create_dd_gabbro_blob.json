@@ -1,0 +1,13 @@
+
+{
+  "registry_name": "create_dd:gabbro_blob",
+  "worldgen/placed_feature": {
+    "feature": "create_dd:gabbro_blob",
+    "placement": [
+      {
+        "entry": "create_dd:gabbro_blob",
+        "type": "create_dd:config_driven"
+      }
+    ]
+  }
+}

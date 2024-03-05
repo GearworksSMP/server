@@ -1,0 +1,22 @@
+
+{
+  "registry_name": "byg:oak_bushes",
+  "worldgen/configured_feature": {
+    "config": {
+      "features": [
+        {
+          "feature": {
+            "feature": "byg:oak_bush1",
+            "placement": []
+          },
+          "chance": 0.5
+        }
+      ],
+      "default": {
+        "feature": "byg:oak_bush1",
+        "placement": []
+      }
+    },
+    "type": "minecraft:random_selector"
+  }
+}

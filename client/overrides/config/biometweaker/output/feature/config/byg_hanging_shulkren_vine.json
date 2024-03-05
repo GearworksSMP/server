@@ -1,0 +1,48 @@
+
+{
+  "registry_name": "byg:hanging_shulkren_vine",
+  "worldgen/configured_feature": {
+    "config": {
+      "min_length": 1,
+      "max_length": 9,
+      "placement_filter": {
+        "predicates": [
+          {
+            "tag": "byg:end_stone",
+            "type": "minecraft:matching_block_tag"
+          },
+          {
+            "blocks": [
+              "minecraft:end_stone",
+              "byg:shulkren_phylium"
+            ],
+            "type": "minecraft:matching_blocks"
+          }
+        ],
+        "type": "minecraft:any_of"
+      },
+      "base_block_provider": {
+        "state": {
+          "Name": "minecraft:end_stone"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "block_provider": {
+        "state": {
+          "Name": "byg:shulkren_vine_plant"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "end_block_provider": {
+        "state": {
+          "Properties": {
+            "age": "23"
+          },
+          "Name": "byg:shulkren_vine"
+        },
+        "type": "minecraft:simple_state_provider"
+      }
+    },
+    "type": "byg:hanging_feature"
+  }
+}

@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "dungeons_mobs:wildfire",
+  "category": "MONSTER",
+  "fire_immune": true,
+  "summonable": true,
+  "spawn_far_from_player": false,
+  "tracking_range": 10,
+  "update_interval": 3,
+  "defaul_loot_table": "dungeons_mobs:entities/wildfire",
+  "size": {
+    "height": 2.25,
+    "width": 0.9,
+    "fixed": false
+  }
+}

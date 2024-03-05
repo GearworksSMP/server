@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "luphieclutteredmod:log_set_seating_entity",
+  "category": "MONSTER",
+  "fire_immune": false,
+  "summonable": true,
+  "spawn_far_from_player": false,
+  "tracking_range": 64,
+  "update_interval": 3,
+  "defaul_loot_table": "luphieclutteredmod:entities/log_set_seating_entity",
+  "size": {
+    "height": 0.7,
+    "width": 0.4,
+    "fixed": false
+  }
+}

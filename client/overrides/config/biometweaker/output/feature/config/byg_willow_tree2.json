@@ -1,0 +1,78 @@
+
+{
+  "registry_name": "byg:willow_tree2",
+  "worldgen/configured_feature": {
+    "config": {
+      "max_log_depth": 10,
+      "decorators": [
+        {
+          "probability": 1.0,
+          "type": "minecraft:leave_vine"
+        },
+        {
+          "type": "minecraft:trunk_vine"
+        },
+        {
+          "block_provider": {
+            "state": {
+              "Name": "minecraft:moss_carpet"
+            },
+            "type": "minecraft:simple_state_provider"
+          },
+          "required_empty_blocks": 1,
+          "directions": [
+            "up"
+          ],
+          "probability": 0.9,
+          "exclusion_radius_xz": 0,
+          "exclusion_radius_y": 0,
+          "type": "byg:attached_to_logs"
+        }
+      ],
+      "place_from_nbt": [],
+      "leaves_target": [
+        "byg:willow_leaves"
+      ],
+      "can_grow_on_filter": {
+        "tag": "byg:may_place_on/willow_sapling",
+        "type": "minecraft:matching_block_tag"
+      },
+      "can_leaves_place_filter": {
+        "type": "minecraft:replaceable"
+      },
+      "log_provider": {
+        "state": {
+          "Properties": {
+            "axis": "y"
+          },
+          "Name": "byg:willow_log"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "leaves_provider": {
+        "state": {
+          "Properties": {
+            "waterlogged": "false",
+            "persistent": "false",
+            "distance": "7"
+          },
+          "Name": "byg:willow_leaves"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "log_target": [
+        "byg:willow_log"
+      ],
+      "base_location": "byg:features/trees/willow/willow_tree_trunk1",
+      "canopy_location": "byg:features/trees/willow/willow_tree_canopy2",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": 5,
+          "max_inclusive": 15
+        }
+      }
+    },
+    "type": "corgilib:tree_from_nbt"
+  }
+}

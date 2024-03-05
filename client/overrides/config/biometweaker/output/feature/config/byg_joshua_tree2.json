@@ -1,0 +1,113 @@
+
+{
+  "registry_name": "byg:joshua_tree2",
+  "worldgen/configured_feature": {
+    "config": {
+      "max_log_depth": 6,
+      "decorators": [
+        {
+          "leaves_block": "byg:ripe_joshua_leaves",
+          "block_provider": {
+            "source": {
+              "state": {
+                "Properties": {
+                  "age": "0"
+                },
+                "Name": "byg:joshua_fruit_block"
+              },
+              "type": "minecraft:simple_state_provider"
+            },
+            "property": "age",
+            "values": {
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 0,
+                "max_inclusive": 3
+              }
+            },
+            "type": "minecraft:randomized_int_state_provider"
+          },
+          "required_empty_blocks": 2,
+          "directions": [
+            "down"
+          ],
+          "probability": 0.1,
+          "exclusion_radius_xz": 2,
+          "exclusion_radius_y": 0,
+          "type": "byg:attached_to_fruit_leaves"
+        }
+      ],
+      "place_from_nbt": [],
+      "leaves_target": [
+        "byg:joshua_leaves"
+      ],
+      "can_grow_on_filter": {
+        "tag": "byg:may_place_on/joshua_sapling",
+        "type": "minecraft:matching_block_tag"
+      },
+      "can_leaves_place_filter": {
+        "type": "minecraft:replaceable"
+      },
+      "log_provider": {
+        "state": {
+          "Properties": {
+            "axis": "y"
+          },
+          "Name": "minecraft:oak_log"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "leaves_provider": {
+        "entries": [
+          {
+            "data": {
+              "Properties": {
+                "waterlogged": "false",
+                "persistent": "false",
+                "distance": "7"
+              },
+              "Name": "byg:joshua_leaves"
+            },
+            "weight": 10
+          },
+          {
+            "data": {
+              "Properties": {
+                "waterlogged": "false",
+                "persistent": "false",
+                "distance": "7"
+              },
+              "Name": "byg:flowering_joshua_leaves"
+            },
+            "weight": 2
+          },
+          {
+            "data": {
+              "Properties": {
+                "waterlogged": "false",
+                "persistent": "false",
+                "distance": "7"
+              },
+              "Name": "byg:ripe_joshua_leaves"
+            },
+            "weight": 1
+          }
+        ],
+        "type": "minecraft:weighted_state_provider"
+      },
+      "log_target": [
+        "minecraft:oak_log"
+      ],
+      "base_location": "byg:features/trees/joshua/joshua_trunk2",
+      "canopy_location": "byg:features/trees/joshua/joshua_canopy2",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": 5,
+          "max_inclusive": 8
+        }
+      }
+    },
+    "type": "corgilib:tree_from_nbt"
+  }
+}

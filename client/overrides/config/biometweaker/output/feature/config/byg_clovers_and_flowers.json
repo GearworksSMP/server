@@ -1,0 +1,22 @@
+
+{
+  "registry_name": "byg:clovers_and_flowers",
+  "worldgen/configured_feature": {
+    "config": {
+      "features": [
+        {
+          "feature": {
+            "feature": "byg:flower_patch",
+            "placement": []
+          },
+          "chance": 0.5
+        }
+      ],
+      "default": {
+        "feature": "byg:clover_patch",
+        "placement": []
+      }
+    },
+    "type": "minecraft:random_selector"
+  }
+}

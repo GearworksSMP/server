@@ -1,0 +1,307 @@
+
+{
+  "registry_name": "create_dd:striated_ores_ocean",
+  "worldgen/configured_feature": {
+    "config": {
+      "entry": "create_dd:striated_ores_ocean",
+      "discard_chance_on_air_exposure": 0.0,
+      "layer_patterns": [
+        [
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create_dd:weathered_limestone"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create_dd:weathered_limestone"
+                  }
+                }
+              ]
+            ],
+            "min_size": 1,
+            "max_size": 3,
+            "weight": 1
+          },
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:calcite"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:calcite"
+                  }
+                }
+              ]
+            ],
+            "min_size": 1,
+            "max_size": 1,
+            "weight": 2
+          },
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create:limestone"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create:limestone"
+                  }
+                }
+              ]
+            ],
+            "min_size": 1,
+            "max_size": 2,
+            "weight": 1
+          },
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:diorite"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:diorite"
+                  }
+                }
+              ]
+            ],
+            "min_size": 1,
+            "max_size": 1,
+            "weight": 1
+          },
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create_dd:weathered_limestone"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create_dd:weathered_limestone"
+                  }
+                }
+              ]
+            ],
+            "min_size": 2,
+            "max_size": 4,
+            "weight": 3
+          }
+        ],
+        [
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create_dd:dolomite"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create_dd:dolomite"
+                  }
+                }
+              ]
+            ],
+            "min_size": 2,
+            "max_size": 3,
+            "weight": 2
+          },
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:diorite"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:diorite"
+                  }
+                }
+              ],
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:calcite"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:calcite"
+                  }
+                }
+              ]
+            ],
+            "min_size": 2,
+            "max_size": 3,
+            "weight": 1
+          },
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:calcite"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:diorite"
+                  }
+                }
+              ]
+            ],
+            "min_size": 1,
+            "max_size": 2,
+            "weight": 1
+          },
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create_dd:dolomite"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "create_dd:dolomite"
+                  }
+                }
+              ]
+            ],
+            "min_size": 2,
+            "max_size": 3,
+            "weight": 1
+          },
+          {
+            "targets": [
+              [
+                {
+                  "target": {
+                    "tag": "minecraft:stone_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:calcite"
+                  }
+                },
+                {
+                  "target": {
+                    "tag": "minecraft:deepslate_ore_replaceables",
+                    "predicate_type": "minecraft:tag_match"
+                  },
+                  "state": {
+                    "Name": "minecraft:diorite"
+                  }
+                }
+              ]
+            ],
+            "min_size": 1,
+            "max_size": 2,
+            "weight": 1
+          }
+        ]
+      ]
+    },
+    "type": "create_dd:layered_ore"
+  }
+}

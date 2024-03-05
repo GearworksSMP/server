@@ -1,0 +1,16 @@
+
+{
+  "registry_name": "iceandfire:hydra_cave",
+  "worldgen/placed_feature": {
+    "feature": "iceandfire:hydra_cave",
+    "placement": [
+      {
+        "heightmap": "WORLD_SURFACE_WG",
+        "type": "minecraft:heightmap"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+
+{
+  "registry_name": "ends_delight:chorus_succulent",
+  "worldgen/placed_feature": {
+    "feature": "ends_delight:chorus_succulent",
+    "placement": [
+      {
+        "chance": 8,
+        "type": "minecraft:rarity_filter"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "heightmap": "MOTION_BLOCKING",
+        "type": "minecraft:heightmap"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "iceandfire:spawn_stymphalian_bird",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "iceandfire:spawn_stymphalian_bird"
+  }
+}

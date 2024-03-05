@@ -1,0 +1,8 @@
+
+{
+  "registry_name": "iceandfire:myrmex_hive_jungle",
+  "worldgen/configured_feature": {
+    "config": {},
+    "type": "iceandfire:myrmex_hive_jungle"
+  }
+}

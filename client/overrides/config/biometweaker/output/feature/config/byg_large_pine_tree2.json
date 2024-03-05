@@ -1,0 +1,57 @@
+
+{
+  "registry_name": "byg:large_pine_tree2",
+  "worldgen/configured_feature": {
+    "config": {
+      "place_from_nbt": [],
+      "leaves_target": [
+        "byg:pine_leaves"
+      ],
+      "can_grow_on_filter": {
+        "tag": "byg:may_place_on/pine_sapling",
+        "type": "minecraft:matching_block_tag"
+      },
+      "can_leaves_place_filter": {
+        "type": "minecraft:replaceable"
+      },
+      "log_provider": {
+        "state": {
+          "Properties": {
+            "axis": "y"
+          },
+          "Name": "byg:pine_log"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "leaves_provider": {
+        "entries": [
+          {
+            "data": {
+              "Properties": {
+                "waterlogged": "false",
+                "persistent": "false",
+                "distance": "7"
+              },
+              "Name": "byg:pine_leaves"
+            },
+            "weight": 1
+          }
+        ],
+        "type": "minecraft:weighted_state_provider"
+      },
+      "log_target": [
+        "byg:pine_log"
+      ],
+      "base_location": "byg:features/trees/generic_trunk",
+      "canopy_location": "byg:features/trees/pine/large_pine_canopy1",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": 7,
+          "max_inclusive": 9
+        }
+      }
+    },
+    "type": "corgilib:tree_from_nbt"
+  }
+}

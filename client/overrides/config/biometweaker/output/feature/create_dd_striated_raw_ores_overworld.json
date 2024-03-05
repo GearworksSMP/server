@@ -1,0 +1,13 @@
+
+{
+  "registry_name": "create_dd:striated_raw_ores_overworld",
+  "worldgen/placed_feature": {
+    "feature": "create_dd:striated_raw_ores_overworld",
+    "placement": [
+      {
+        "entry": "create_dd:striated_raw_ores_overworld",
+        "type": "create_dd:config_driven"
+      }
+    ]
+  }
+}

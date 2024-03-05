@@ -1,0 +1,68 @@
+
+{
+  "registry_name": "byg:mahogany_tree3",
+  "worldgen/configured_feature": {
+    "config": {
+      "decorators": [
+        {
+          "vine_block": "minecraft:vine",
+          "probability": 0.4,
+          "type": "byg:leave_vine"
+        },
+        {
+          "vine_block": "minecraft:vine",
+          "probability": 1.0,
+          "type": "byg:trunk_vine"
+        },
+        {
+          "probability": 0.2,
+          "type": "minecraft:cocoa"
+        }
+      ],
+      "place_from_nbt": [],
+      "leaves_target": [
+        "byg:mahogany_leaves"
+      ],
+      "can_grow_on_filter": {
+        "tag": "byg:may_place_on/mahogany_sapling",
+        "type": "minecraft:matching_block_tag"
+      },
+      "can_leaves_place_filter": {
+        "type": "minecraft:replaceable"
+      },
+      "log_provider": {
+        "state": {
+          "Properties": {
+            "axis": "y"
+          },
+          "Name": "byg:mahogany_log"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "leaves_provider": {
+        "state": {
+          "Properties": {
+            "waterlogged": "false",
+            "persistent": "false",
+            "distance": "7"
+          },
+          "Name": "byg:mahogany_leaves"
+        },
+        "type": "minecraft:simple_state_provider"
+      },
+      "log_target": [
+        "byg:mahogany_log"
+      ],
+      "base_location": "byg:features/trees/mahogany/mahogany_tree_trunk1",
+      "canopy_location": "byg:features/trees/mahogany/mahogany_tree_canopy3",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": 5,
+          "max_inclusive": 15
+        }
+      }
+    },
+    "type": "corgilib:tree_from_nbt"
+  }
+}
