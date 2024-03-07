@@ -27,6 +27,8 @@ jobs:
           request_pty: true
           script: |
             cd /community/
+            chown -R root:docker .
+            chmod +x ./minecraft.sh
             ./minecraft.sh stop
 
       - name: Adding Known Hosts

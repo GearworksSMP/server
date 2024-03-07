@@ -33,6 +33,8 @@ jobs:
           request_pty: true
           script: |
             cd /community-development/
+            chown -R root:docker .
+            chmod +x ./minecraft.sh
             ./minecraft.sh stop
 
       - name: deploy configs
@@ -119,4 +121,4 @@ jobs:
             cd /community-development/
             chown -R root:docker .
             chmod +x ./minecraft.sh
-            bash -c '/community-development/minecraft.sh start'
+            bash -c './minecraft.sh start'
