@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "byg:global/raw_generation",
-  "worldgen/placed_feature": {
-    "feature": "byg:global/raw_generation",
-    "placement": []
-  }
-}

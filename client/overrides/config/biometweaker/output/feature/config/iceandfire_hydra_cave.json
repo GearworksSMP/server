@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "iceandfire:hydra_cave",
-  "worldgen/configured_feature": {
-    "config": {},
-    "type": "iceandfire:hydra_cave"
-  }
-}

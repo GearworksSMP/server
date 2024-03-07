@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "byg:global/surface_structures",
-  "worldgen/placed_feature": {
-    "feature": "byg:global/surface_structures",
-    "placement": []
-  }
-}

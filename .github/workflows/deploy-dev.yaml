@@ -33,12 +33,10 @@ jobs:
           request_pty: true
           script: |
             cd /community-development/
-            chown -R root:root .
-            chmod +x ./minecraft.sh
             ./minecraft.sh stop
 
       - name: deploy configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config --delete
 
       - name: deploy voice chat config
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/voicechat/voicechat-server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/voicechat/voicechat-server.properties
@@ -116,10 +114,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          request_pty: true
           allenvs: true
           script: |
             cd /community-development/
-            chown -R root:root .
+            chown -R root:docker .
             chmod +x ./minecraft.sh
-            sudo ./minecraft.sh start
+            bash -c '/community-development/minecraft.sh start'

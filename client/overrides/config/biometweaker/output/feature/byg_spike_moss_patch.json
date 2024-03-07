@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "byg:spike_moss_patch",
-  "worldgen/placed_feature": {
-    "feature": "minecraft:moss_patch",
-    "placement": []
-  }
-}

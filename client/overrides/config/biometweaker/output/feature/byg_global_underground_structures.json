@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "byg:global/underground_structures",
-  "worldgen/placed_feature": {
-    "feature": "byg:global/underground_structures",
-    "placement": []
-  }
-}

@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "iceandfire:spawn_dragon_skeleton_fire",
-  "worldgen/configured_feature": {
-    "config": {},
-    "type": "iceandfire:spawn_dragon_skeleton_fire"
-  }
-}

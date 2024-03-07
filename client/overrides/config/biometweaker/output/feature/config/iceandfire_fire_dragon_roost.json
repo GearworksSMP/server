@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "iceandfire:fire_dragon_roost",
-  "worldgen/configured_feature": {
-    "config": {},
-    "type": "iceandfire:fire_dragon_roost"
-  }
-}

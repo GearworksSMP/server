@@ -1,8 +1,0 @@
-
-{
-  "registry_name": "byg:dune_terrain",
-  "worldgen/configured_feature": {
-    "config": {},
-    "type": "byg:dune_terrain"
-  }
-}
