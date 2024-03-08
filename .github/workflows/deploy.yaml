@@ -35,46 +35,46 @@ jobs:
         run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: deploy configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/config --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/config --delete
 
       - name: copy banned ips
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-ips.json
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-ips.json
 
       - name: copy banned players
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-players.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-players.json
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-players.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/banned-players.json
 
       - name: copy default configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
 
       - name: copy local
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/
 
       - name: copy kubejs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
 
       - name: copy minecraft.sh
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/minecraft.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/minecraft.sh
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/minecraft.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/minecraft.sh
 
       - name: copy mods
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/ --delete
 
       - name: copy run.sh
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/run.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/run.sh
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/run.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/run.sh
 
       - name: copy server.properties
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/server.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/server.properties
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/server.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/server.properties
 
       - name: copy user_jvm_args.txt
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/user_jvm_args.txt ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/user_jvm_args.txt
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/user_jvm_args.txt ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/user_jvm_args.txt
 
       - name: copy whitelist.json
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/whitelist.json
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/whitelist.json
 
       - name: copy world settings
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/ --delete
 
       - name: copy datapacks
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/datapacks ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/datapacks ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community/uberswesCommunityEdition/ --delete
 
       - name: Restart Server
         uses: appleboy/ssh-action@master

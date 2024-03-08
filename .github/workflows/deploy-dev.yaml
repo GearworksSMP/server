@@ -38,19 +38,19 @@ jobs:
             ./minecraft.sh stop
 
       - name: deploy configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config --delete
 
       - name: deploy voice chat config
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/voicechat/voicechat-server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/voicechat/voicechat-server.properties
 
       - name: copy banned ips
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-ips.json
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-ips.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-ips.json
 
       - name: copy banned players
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-players.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-players.json
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/banned-players.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/banned-players.json
 
       - name: copy default configs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/defaultconfigs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: copy Discord-Integration.dev.toml
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/Discord-Integration.dev.toml ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/Discord-Integration.toml
@@ -62,34 +62,34 @@ jobs:
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/config/create-track-map.dev.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/config/create-track-map.json
 
       - name: copy local
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/local ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: copy kubejs
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/kubejs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: copy mods
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/mods ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ --delete
 
       - name: copy run.sh
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/run.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/run.sh
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/run.sh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/run.sh
 
       - name: copy ops.json
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/ops.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ops.json
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/ops.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/ops.json
 
       - name: copy server.properties
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/server.dev.properties ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/server.properties
 
       - name: copy user_jvm_args.txt
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/user_jvm_args.dev.txt ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/user_jvm_args.txt
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/user_jvm_args.dev.txt ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/user_jvm_args.txt
 
       - name: copy whitelist.json
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.dev.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/whitelist.json
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.dev.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/whitelist.json
 
       - name: copy world settings
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/uberswesCommunityEdition/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/uberswesCommunityEdition/ --delete
 
       - name: copy datapacks
-        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/datapacks ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/uberswesCommunityEdition/ --delete
+        run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/datapacks ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/uberswesCommunityEdition/ --delete
 
 
       - name: Copy Latest Backup
@@ -121,4 +121,4 @@ jobs:
             cd /community-development/
             chown -R root:docker .
             chmod +x ./minecraft.sh
-            bash -c './minecraft.sh start'
+            ./minecraft.sh start
