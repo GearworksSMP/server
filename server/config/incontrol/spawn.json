@@ -4,5 +4,35 @@
     "onjoin": false,
     "random":0.2,
     "result": "deny"
+  },
+  {
+    "mob": "minecraft:villager",
+    "dimension": "ad_astra:mars",
+    "onjoin": true,
+    "result": "deny"
+  },
+  {
+    "mob": "alexsmobs:fly",
+    "dimension": "ad_astra:mars",
+    "onjoin": true,
+    "result": "deny"
+  },
+  {
+    "mob": "alexsmobs:fly",
+    "dimension": "ad_astra:moon",
+    "onjoin": true,
+    "result": "deny"
+  },
+  {
+    "mob": "alexsmobs:fly",
+    "dimension": "ad_astra:mercury",
+    "onjoin": true,
+    "result": "deny"
+  },
+  {
+    "mob": "alexsmobs:venus",
+    "dimension": "ad_astra:mercury",
+    "onjoin": true,
+    "result": "deny"
   }
 ]
