@@ -6,32 +6,14 @@
     "result": "deny"
   },
   {
-    "mob": "minecraft:villager",
-    "dimension": "ad_astra:mars",
+    "mob": ["alexsmobs:fly"],
+    "dimension": ["ad_astra:mars", "ad_astra:moon", "ad_astra:mercury", "alexsmobs:venus", "uberswe:terra"],
     "onjoin": true,
     "result": "deny"
   },
   {
-    "mob": "alexsmobs:fly",
-    "dimension": "ad_astra:mars",
-    "onjoin": true,
-    "result": "deny"
-  },
-  {
-    "mob": "alexsmobs:fly",
-    "dimension": "ad_astra:moon",
-    "onjoin": true,
-    "result": "deny"
-  },
-  {
-    "mob": "alexsmobs:fly",
-    "dimension": "ad_astra:mercury",
-    "onjoin": true,
-    "result": "deny"
-  },
-  {
-    "mob": "alexsmobs:venus",
-    "dimension": "ad_astra:mercury",
+    "dimension": "minecraft:overworld",
+    "mod": ["dungeons_mobs", "graveyard", "iceandfire", "born_in_chaos_v1", "hexerei", "mutantmonsters"],
     "onjoin": true,
     "result": "deny"
   }

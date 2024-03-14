@@ -1,15 +1,29 @@
-// priority: 0
+let lastPos = {
+	x:0,
+	z:0,
+}
+PlayerEvents.tick(e => {
+	const { player } = e;
+	const { x, z } = player
+	if (player.getLevel().getDimension() !== "uberswe:terra") {
+		return
+	}
 
-console.info('Hello, World! (You will see this line every time server resources reload)')
-
-ServerEvents.recipes(event => {
-	// Change recipes here
-})
-
-ServerEvents.tags('item', event => {
-	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
-	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
-
-	// Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
-	// event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
+	let speed = 0
+	if (lastPos.x !== 0 && lastPos.z !== 0) {
+		speed = Math.sqrt( Math.pow((lastPos.x-x), 2) + Math.pow((lastPos.z-z), 2) );
+	}
+	lastPos = {
+		x:x,
+		z:z,
+	}
+	if (speed > 20) {
+		// If speed is over 20 it's probably a teleport or something
+	} else if (speed > 0.6) {
+		//player.displayClientMessage(Component.gold('Speed: ').append(Component.red(speed.toFixed(2))), true)
+		player.displayClientMessage(Component.red('It Hurts To Move Too Fast'), true)
+		player.attack('generic', 10)
+	} else if (speed > 0.3) {
+		player.displayClientMessage(Component.yellow('You Feel A Mysterious Force'), true)
+	}
 })

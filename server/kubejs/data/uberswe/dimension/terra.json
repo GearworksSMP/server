@@ -205,7 +205,7 @@
             "humidity": 1.8,
             "continentalness": 0,
             "erosion": 0,
-            "weirdness": 0.5,
+            "weirdness": 0.15,
             "depth": 0,
             "offset": 0
           }
@@ -265,7 +265,7 @@
             "humidity": 1.7,
             "continentalness": 0,
             "erosion": 0,
-            "weirdness": 0.5,
+            "weirdness": 0.15,
             "depth": 0,
             "offset": 0
           }
@@ -673,7 +673,7 @@
             "humidity": 0.3,
             "continentalness": 0,
             "erosion": 0,
-            "weirdness": 0,
+            "weirdness": 0.8,
             "depth": 0,
             "offset": 0
           }
@@ -709,7 +709,7 @@
             "humidity": -0.4,
             "continentalness": 0,
             "erosion": 0,
-            "weirdness": 0.1,
+            "weirdness": 0.8,
             "depth": 0,
             "offset": 0
           }
@@ -1390,10 +1390,10 @@
           "biome": "hexerei:willow_swamp",
           "parameters": {
             "temperature": 0.3,
-            "humidity": 1.4,
+            "humidity": 0.5,
             "continentalness": 0,
             "erosion": 0,
-            "weirdness": 0.35,
+            "weirdness": 0,
             "depth": 0,
             "offset": 0
           }

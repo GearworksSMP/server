@@ -21,6 +21,17 @@
     "minecraft:snow_golem",
     "minecraft:magma_cube",
     "minecraft:allay",
-    "minecraft:warden"
+    "minecraft:warden",
+    "minecraft:creeper",
+    "minecraft:spider",
+    "minecraft:villager",
+    "minecraft:endermen",
+    "minecraft:hoglin",
+    "minecraft:ghast",
+    "minecraft:piglin",
+    "minecraft:shulker",
+    "alexsmobs:cosmaw",
+    "alexsmobs:endergrade",
+    "alexsmobs:crow"
   ]
 }
