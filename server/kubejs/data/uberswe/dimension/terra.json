@@ -81,7 +81,7 @@
         {
           "biome": "biomesoplenty:cold_desert",
           "parameters": {
-            "temperature": 0.25,
+            "temperature": -0.25,
             "humidity": 0,
             "continentalness": 0,
             "erosion": 0,
@@ -1389,8 +1389,8 @@
         {
           "biome": "hexerei:willow_swamp",
           "parameters": {
-            "temperature": 0.3,
-            "humidity": 0.5,
+            "temperature": 0.25,
+            "humidity": 0.25,
             "continentalness": 0,
             "erosion": 0,
             "weirdness": 0,
