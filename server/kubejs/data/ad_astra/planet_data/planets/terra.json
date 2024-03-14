@@ -5,7 +5,7 @@
   "world": "uberswe:terra",
   "orbit_world": "uberswe:terra_orbit",
   "rocket_tier": 4,
-  "gravity": 7.000,
+  "gravity": 8.000,
   "has_atmosphere": true,
   "days_in_year": 365,
   "temperature": 20,

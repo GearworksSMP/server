@@ -85,29 +85,29 @@ jobs:
       - name: copy whitelist.json
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/whitelist.dev.json ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/whitelist.json
 
+#      - name: Copy Latest Backup
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secrets.SSH_HOST }}
+#          username: ${{ secrets.SSH_USER }}
+#          key: ${{ secrets.SSH_KEY }}
+#          port: ${{ secrets.SSH_PORT }}
+#          script: |
+#            rm -rf /community-development/uberswesCommunityEdition
+#            cd /community/backups/
+#            unzip -o "$(ls -t | head -n 2 | tail -n 1)" -d /community-development/
+#            cp -r /community/libraries /community-development/libraries
+#            cp -r /community/eula.txt /community-development/eula.txt
+#            cd /community-development/
+#            chown -R root:root .
+#            chmod +x ./minecraft.sh
+
       - name: copy world settings
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/serverconfig ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/uberswesCommunityEdition/ --delete
 
       - name: copy datapacks
         run: rsync -avzI -e "ssh -p ${{ secrets.SSH_PORT }}" ./server/uberswesCommunityEdition/datapacks ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/community-development/uberswesCommunityEdition/ --delete
 
-
-      - name: Copy Latest Backup
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            rm -rf /community-development/uberswesCommunityEdition
-            cd /community/backups/
-            unzip -o "$(ls -t | head -n 2 | tail -n 1)" -d /community-development/
-            cp -r /community/libraries /community-development/libraries
-            cp -r /community/eula.txt /community-development/eula.txt
-            cd /community-development/
-            chown -R root:root .
-            chmod +x ./minecraft.sh
 
       - name: Start Server
         uses: appleboy/ssh-action@master
