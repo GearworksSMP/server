@@ -79,18 +79,6 @@
           }
         },
         {
-          "biome": "biomesoplenty:cold_desert",
-          "parameters": {
-            "temperature": -0.25,
-            "humidity": 0,
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": -0.1,
-            "depth": 0,
-            "offset": 0
-          }
-        },
-        {
           "biome": "biomesoplenty:coniferous_forest",
           "parameters": {
             "temperature": 0.45,
@@ -662,18 +650,6 @@
             "continentalness": 0,
             "erosion": 0,
             "weirdness": 0.9,
-            "depth": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "biomesoplenty:wasteland",
-          "parameters": {
-            "temperature": 0.5,
-            "humidity": 0.3,
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": 0.8,
             "depth": 0,
             "offset": 0
           }
