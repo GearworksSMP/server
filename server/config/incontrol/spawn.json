@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "hostile": true,
+    "onjoin": false,
+    "random":0.2,
+    "result": "deny"
+  },
+  {
+    "mob": ["alexsmobs:fly"],
+    "dimension": ["ad_astra:mars", "ad_astra:moon", "ad_astra:mercury", "alexsmobs:venus", "uberswe:terra"],
+    "onjoin": true,
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mod": ["dungeons_mobs", "graveyard", "iceandfire", "born_in_chaos_v1", "hexerei", "mutantmonsters"],
+    "onjoin": true,
+    "result": "deny"
+  }
+]

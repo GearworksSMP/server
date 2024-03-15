@@ -6,6 +6,12 @@
     "bypassesPlayerLimit": true
   },
   {
+    "uuid": "400702aa-47fb-4ab7-94d9-8e9621943176",
+    "name": "RascallyRabbit",
+    "level": 3,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "65c43312-1b7a-436c-9cc7-a295b7584ee3",
     "name": "uberswecamera",
     "level": 3,

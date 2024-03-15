@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "mob": ["mutantmonsters:spider_pig", "mutantmonsters:skull_spirit", "mutantmonsters:mutant_zombie", "mutantmonsters:mutant_snow_golem", "mutantmonsters:mutant_skeleton", "mutantmonsters:mutant_enderman","mutantmonsters:mutant_creeper","mutantmonsters:endersoul_clone","born_in_chaos_v1:baby_skeleton","born_in_chaos_v1:baby_skeleton_minion","born_in_chaos_v1:barrel_zombie","born_in_chaos_v1:bloody_gadfly","born_in_chaos_v1:bone_imp","born_in_chaos_v1:corpse_fly","born_in_chaos_v1:decrepit_skeleton","born_in_chaos_v1:dread_hound","born_in_chaos_v1:felsteed","born_in_chaos_v1:nightmare_stalker","born_in_chaos_v1:phantom_creeper","born_in_chaos_v1:skeleton_thrasher","born_in_chaos_v1:supreme_bonescaller","born_in_chaos_v1:sir_the_headless","born_in_chaos_v1:supreme_bonescaller_stage_2","born_in_chaos_v1:zombie_bruiser","born_in_chaos_v1:zombie_clown","iceandfire:dread_knight","iceandfire:dread_lich","iceandfire:dread_thrall"],
+    "persecond": 0.5,
+    "attempts": 5,
+    "amount": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "uberswe:terra",
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 20
+    }
+  }
+]
