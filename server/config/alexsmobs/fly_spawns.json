@@ -16,6 +16,23 @@
         "negate": true,
         "value": "minecraft:is_ocean"
       }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:lunar_wastelands"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "byg:sierra_badlands"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:martian_wastelands"
+      }
     ]
   ]
 }

@@ -1,15 +1,25 @@
-// priority: 0
+let PlayersLastPos = {}
 
-console.info('Hello, World! (You will see this line every time server resources reload)')
+PlayerEvents.tick(e => {
+	let { player } = e;
+	let playerUUID = player.getId();
+	let { x, z } = player
+	if (player.getLevel().getDimension() !== "uberswe:terra") {
+		return
+	}
 
-ServerEvents.recipes(event => {
-	// Change recipes here
-})
-
-ServerEvents.tags('item', event => {
-	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
-	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
-
-	// Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
-	// event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
+	let speed = 0
+	Object.keys(PlayersLastPos).forEach(key => {
+		if (key === playerUUID && PlayersLastPos[key] !== undefined && PlayersLastPos[key].x !== 0 && PlayersLastPos[key].z !== 0) {
+			speed = Math.sqrt( Math.pow((PlayersLastPos[key].x-x), 2) + Math.pow((PlayersLastPos[key].z-z), 2) );
+		}
+	})
+	PlayersLastPos[playerUUID]= {x:x, z:z}
+	if (speed > 20) {
+		// If speed is over 20 it's probably a teleport or something
+	} else if (speed > 0.8) {
+		//player.displayClientMessage(Component.gold('Speed: ').append(Component.red(speed.toFixed(2))), true)
+		player.displayClientMessage(Component.red('Moving Too Fast'), true)
+		player.attack('generic', 10)
+	}
 })
