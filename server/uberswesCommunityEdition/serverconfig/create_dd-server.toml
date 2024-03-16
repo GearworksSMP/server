@@ -2,15 +2,15 @@
 #.
 #Parameters and abilities of Create: Dreams n' Desire's kinetic mechanisms
 [kinetics]
-
 	#.
+	#.
+	#multiplier used for calculating exhaustion from speed when a crank is turned.
+	#Range: 0.0 ~ 1.0
+	crankHungerMultiplier = 0.009999999776482582
+
 	#.
 	#Industrial Fan
 	[kinetics.industrialFan]
-		#.
-		#multiplier used for calculating exhaustion from speed when a crank is turned.
-		#Range: 0.0 ~ 1.0
-		crankHungerMultiplier = 0.009999999776482582
 		#.
 		#Maximum distance in blocks Fans can push entities.
 		#Range: > 5
@@ -67,6 +67,68 @@
 				furnace_engine = 341.5
 				accelerator_motor = 0.0
 				kinetic_motor = 1.5
+				radiant_panel = 12.0
+				shadow_panel = 8.0
+
+	#.
+	#Radiant/Shadow Panels
+	[kinetics.RSPanels]
+		#.
+		#Game ticks checking for Panels updating there Generated Rotation.
+		#Range: > 10
+		PanelBlockCheckRate = 10
+		#.
+		#Panels Max Height
+		#Range: > 10
+		PanelMAXHeight = 10
+		#.
+		#Day Min Time
+		#Range: 0 ~ 24000
+		day_min_time = 0
+		#.
+		#Day Max Time
+		#Range: 0 ~ 24000
+		day_max_time = 4000
+		#.
+		#Noon Min Time
+		#Range: 0 ~ 24000
+		noon_min_time = 4000
+		#.
+		#Noon Max Time
+		#Range: 0 ~ 24000
+		noon_max_time = 8000
+		#.
+		#Sunset Min Time
+		#Range: 0 ~ 24000
+		sunset_min_time = 8000
+		#.
+		#Sunset Max Time
+		#Range: 0 ~ 24000
+		sunset_max_time = 12000
+		#.
+		#Night Min Time
+		#Range: 0 ~ 24000
+		night_min_time = 12000
+		#.
+		#Night Max Time
+		#Range: 0 ~ 24000
+		night_max_time = 16000
+		#.
+		#Midnight Min Time
+		#Range: 0 ~ 24000
+		midnight_min_time = 16000
+		#.
+		#Midnight Max Time
+		#Range: 0 ~ 24000
+		midnight_max_time = 20000
+		#.
+		#Sunrise Min Time
+		#Range: 0 ~ 24000
+		sunrise_min_time = 20000
+		#.
+		#Sunrise Max Time
+		#Range: 0 ~ 24000
+		sunrise_max_time = 24000
 
 #.
 #Recipes
