@@ -20,6 +20,6 @@ PlayerEvents.tick(e => {
 	} else if (speed > 0.8) {
 		//player.displayClientMessage(Component.gold('Speed: ').append(Component.red(speed.toFixed(2))), true)
 		player.displayClientMessage(Component.red('Moving Too Fast'), true)
-		player.attack('generic', 2)
+		player.attack('generic', 4)
 	}
 })
