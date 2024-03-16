@@ -1,0 +1,16 @@
+{
+  "translation": "Terra",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:proxima_centauri",
+  "world": "uberswe:terra",
+  "orbit_world": "uberswe:terra_orbit",
+  "rocket_tier": 4,
+  "gravity": 8.000,
+  "has_atmosphere": true,
+  "days_in_year": 365,
+  "temperature": 20,
+  "solar_power": 17,
+  "orbit_solar_power": 19,
+  "has_oxygen": true,
+  "button_color": "green"
+}

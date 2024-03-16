@@ -34,11 +34,11 @@
 		#.
 		#Smoke emission rate on contraptions
 		#Range: 0.0 ~ 10.0
-		smokePercentage = 0.75
+		smokePercentage = 0.05
 		#.
 		#Smoke texture quality
 		#Allowed Values: LOW, MEDIUM, HIGH, ULTRA
-		smokeQuality = "HIGH"
+		smokeQuality = "LOW"
 
 	#.
 	#Journeymap Settings
