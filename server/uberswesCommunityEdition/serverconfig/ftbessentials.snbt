@@ -40,13 +40,13 @@
 		# Allows users to access their ender chest, as well as admins to manage other players' ender chests.
 		enderchest: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to set a custom hat as their head item by using a command
 		hat: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to kick themselves from the server, for example if they are stuck or desynced
@@ -58,7 +58,7 @@
 		# Allows users to change their display name, as well as admins to change nicknames for other users
 		nick: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to announce their recording or streaming status to the server by using commands
@@ -85,7 +85,7 @@
 			cooldown: 30
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# Max size of the teleport history. This limits how many times you can use /back
 			# You can override this with FTB Ranks using ftbessentials.back.max
@@ -103,7 +103,7 @@
 			cooldown: 10
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# Max amount of homes a user can have.
 			# You can override this with FTB Ranks using ftbessentials.home.max
@@ -122,7 +122,7 @@
 			cooldown: 600
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# /rtp max distance from spawn point
 			# Default: 25000
@@ -160,13 +160,13 @@
 			cooldown: 10
 			
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows admins to teleport to the location a user was last seen at
 		tpl: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows admins to teleport to dimension
@@ -184,7 +184,7 @@
 			cooldown: 10
 			
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 	}
 }
