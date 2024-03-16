@@ -41,7 +41,7 @@ enabledLunarianDefaultTrades = true
 	netheriteSpaceSuitTankSize = 2000
 	netheriteSpaceSuitHasFireResistance = true
 	#The speed when flying forward.
-	jetSuitSpeed = 0.4
+	jetSuitSpeed = 0.8
 	#The speed when idle flying up.
 	jetSuitUpwardsSpeed = 0.5
 	jetSuitEnergyPerTick = 60

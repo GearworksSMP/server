@@ -15,11 +15,11 @@ PlayerEvents.tick(e => {
 		}
 	})
 	PlayersLastPos[playerUUID]= {x:x, z:z}
-	if (speed > 20) {
+	if (speed > 5) {
 		// If speed is over 20 it's probably a teleport or something
 	} else if (speed > 0.8) {
 		//player.displayClientMessage(Component.gold('Speed: ').append(Component.red(speed.toFixed(2))), true)
 		player.displayClientMessage(Component.red('Moving Too Fast'), true)
-		player.attack('generic', 10)
+		player.attack('generic', 4)
 	}
 })
