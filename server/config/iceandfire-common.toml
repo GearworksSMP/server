@@ -85,7 +85,7 @@
 	[Dragons.Behaviour]
 		#How high dragons can fly, in Y height.
 		#Range: > 100
-		"Max Dragon Flight Height" = 600
+		"Max Dragon Flight Height" = 256
 		#How far away dragons will detect gold blocks being destroyed or chests being opened
 		#Range: 0 ~ 10000
 		"Dragon Gold Search Length" = 30
