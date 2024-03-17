@@ -20,7 +20,7 @@ PlayerEvents.tick(e => {
 			speed = ((speed * 1000) / ((timediff) / 50)) / 1000
 		}
 	})
-	PlayersLastPos[playerUUID]= {x:x, z:z, lastTime: (new Date).getTime()}
+	PlayersLastPos[playerUUID]= {x:x, z:z}
 	if (speed > 5) {
 		// If speed is over 20 it's probably a teleport or something
 	} else if (speed > 0.6) {
