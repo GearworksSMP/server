@@ -69,6 +69,9 @@
     "minecraft:bee",
     "minecraft:cave_spider",
     "minecraft:pillager",
-    "minecraft:rabbit"
+    "minecraft:rabbit",
+    "alexsmobs:warped_toad",
+    "alexsmobs:mimicube",
+    "quark:foxhound"
   ]
 }
