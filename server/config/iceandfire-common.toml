@@ -44,7 +44,7 @@
 	[Dragons.Griefing]
 		#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default. This value is also affected by minecrafts mob griefing rule.
 		#Range: 0 ~ 2
-		"Dragon Griefing" = 0
+		"Dragon Griefing" = 2
 		#True if tamed dragons can follow the griefing rules.
 		"Tamed Dragon Griefing" = true
 		#The percentage chance for a block to drop as an item when a dragon breaks it.
@@ -66,19 +66,19 @@
 		"Dragon Health" = 500.0
 		#Max dragon attack damage. Attack Damage is scaled to this
 		#Range: 1 ~ 10000
-		"Dragon Attack Damage" = 17
+		"Dragon Attack Damage" = 25
 		#Damage dealt from a successful fire breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
 		"Dragon Attack Damage(Fire breath)" = 2.0
 		#Damage dealt from a successful ice breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
-		"Dragon Attack Damage(Ice breath)" = 2.5
+		"Dragon Attack Damage(Ice breath)" = 3.5
 		#Damage dealt from a successful lightning breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
-		"Dragon Attack Damage(Lightning breath)" = 3.5
+		"Dragon Attack Damage(Lightning breath)" = 4.5
 		#Change this to slow down or speed up dragon or amphithere flight.
 		#Range: 0.0 ~ 2.0
-		"Dragon Flight Speed Modifier" = 1.0
+		"Dragon Flight Speed Modifier" = 1.5
 		#Enable this if your server is being bombarded with moved wrongly or moved too fast console messages. REQUIRES RESTART!
 		"Dragon Moved Wrongly Error Fix" = false
 
@@ -134,7 +134,7 @@
 		#Range: 1 ~ 10000
 		"Pixie Village Size" = 5
 		#True if pixies are allowed to steal from players
-		"Pixies Steal Items" = true
+		"Pixies Steal Items" = false
 
 	[Mobs.Cyclops]
 		#1 out of this number chance per chunk for generation
