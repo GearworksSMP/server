@@ -56,7 +56,6 @@
       "iceandfire:stymphalian_bird",
       "iceandfire:troll"
     ],
-    "onjoin": true,
     "dimension": ["minecraft:overworld"],
     "result": "deny"
   },
@@ -69,12 +68,10 @@
       "hexerei",
       "mutantmonsters"
     ],
-    "onjoin": true,
     "result": "deny"
   },
   {
     "dimension": "uberswe:terra",
-    "seesky": false,
     "hostile": true,
     "result": "allow",
     "healthmultiply": 1,
