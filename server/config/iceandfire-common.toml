@@ -46,7 +46,7 @@
 		#Range: 0 ~ 2
 		"Dragon Griefing" = 2
 		#True if tamed dragons can follow the griefing rules.
-		"Tamed Dragon Griefing" = true
+		"Tamed Dragon Griefing" = false
 		#The percentage chance for a block to drop as an item when a dragon breaks it.
 		#Range: 0.0 ~ 1.0
 		"Dragon Block Breaking Drop Chance" = 0.10000000149011612
