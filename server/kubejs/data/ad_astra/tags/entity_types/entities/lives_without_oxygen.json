@@ -64,11 +64,22 @@
     "iceandfire:pixie",
     "iceandfire:siren",
     "iceandfire:troll",
+    "graveyard:nightmare",
     "minecraft:cat",
     "minecraft:blaze",
     "minecraft:bee",
     "minecraft:cave_spider",
     "minecraft:pillager",
-    "minecraft:rabbit"
+    "minecraft:rabbit",
+    "minecraft:witch",
+    "minecraft:vindicator",
+    "minecraft:ravager",
+    "minecraft:sheep",
+    "minecraft:cow",
+    "alexsmobs:warped_toad",
+    "alexsmobs:mimicube",
+    "alexsmobs:enderiophage",
+    "alexsmobs:kangaroo",
+    "quark:foxhound"
   ]
 }
