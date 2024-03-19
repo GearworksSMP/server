@@ -56,7 +56,6 @@
       "iceandfire:stymphalian_bird",
       "iceandfire:troll"
     ],
-    "onjoin": true,
     "dimension": ["minecraft:overworld"],
     "result": "deny"
   },
