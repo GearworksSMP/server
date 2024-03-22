@@ -35,7 +35,6 @@
       "graveyard:revenant",
       "graveyard:skeleton_creeper",
       "graveyard:wraith",
-      "minecraft:warden",
       "minecraft:endermite",
       "mutantmonsters:creeper_minion",
       "mutantmonsters:endersoul_clone",
@@ -64,13 +63,9 @@
       "born_in_chaos_v1:door_knight",
       "born_in_chaos_v1:dread_hound",
       "born_in_chaos_v1:fallen_chaos_knight",
-      "born_in_chaos_v1:felsteed",
       "born_in_chaos_v1:firelight",
       "born_in_chaos_v1:glutton_fish",
       "born_in_chaos_v1:infernal_spirit",
-      "born_in_chaos_v1:lord_pumpkinhead",
-      "born_in_chaos_v1:lord_the_headless",
-      "born_in_chaos_v1:lords_felsteed",
       "born_in_chaos_v1:maggot",
       "born_in_chaos_v1:nightmare_stalker",
       "born_in_chaos_v1:missioner",
@@ -78,17 +73,13 @@
       "born_in_chaos_v1:phantom_creeper",
       "born_in_chaos_v1:pumpkin_spirit",
       "born_in_chaos_v1:restless_spirit",
-      "born_in_chaos_v1:riding_felsteed",
-      "born_in_chaos_v1:riding_lords_felsteed",
       "born_in_chaos_v1:scarlet_persecutor",
       "born_in_chaos_v1:seared_spirit",
       "born_in_chaos_v1:senor_pumpkin",
       "born_in_chaos_v1:siamese_skeletons",
-      "born_in_chaos_v1:sir_pumpkinhead",
       "born_in_chaos_v1:skeleton_demoman",
       "born_in_chaos_v1:skeleton_thrasher",
       "born_in_chaos_v1:supreme_bonescaller",
-      "born_in_chaos_v1:sir_the_headless",
       "born_in_chaos_v1:spirit_guide",
       "born_in_chaos_v1:supreme_bonescaller",
       "born_in_chaos_v1:supreme_bonescaller_stage_2",
@@ -101,7 +92,6 @@
       "iceandfire:amphithere",
       "iceandfire:cockatrice",
       "iceandfire:cyclops",
-      "iceandfire:deathworm",
       "iceandfire:dread_beast",
       "iceandfire:dread_ghoul",
       "iceandfire:dread_horse",
@@ -121,22 +111,17 @@
       "iceandfire:myrmex_worker",
       "iceandfire:sea_serpent",
       "iceandfire:siren",
-      "iceandfire:stone_statue",
       "iceandfire:stymphalian_bird",
       "iceandfire:troll",
-      "iceandfire:fire_dragon",
-      "iceandfire:ice_dragon",
-      "iceandfire:lightning_dragon",
       "waddles:adelie_penguin",
       "minecraft:witch",
       "minecraft:ravager",
       "alexsmobs:skelewag",
       "alexsmobs:skreecher",
-      "alexsmobs:rocky_roller",
-      "alexsmobs:laviathan"
+      "alexsmobs:rocky_roller"
     ],
     "persecond": 0.5,
-    "attempts": 5,
+    "attempts": 2,
     "amount": {
       "minimum": 1,
       "maximum": 10
@@ -148,6 +133,33 @@
       "minheight": 15,
       "maxheight": 600,
       "maxthis": 20
+    }
+  },
+  {
+    "mob": [
+      "minecraft:warden",
+      "born_in_chaos_v1:felsteed",
+      "born_in_chaos_v1:lord_pumpkinhead",
+      "iceandfire:deathworm",
+      "iceandfire:sea_serpent",
+      "iceandfire:fire_dragon",
+      "iceandfire:ice_dragon",
+      "iceandfire:lightning_dragon",
+      "alexsmobs:laviathan"
+    ],
+    "persecond": 0.01,
+    "attempts": 1,
+    "amount": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "conditions": {
+      "dimension": "uberswe:terra",
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 600,
+      "maxthis": 1
     }
   }
 ]
