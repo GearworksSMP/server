@@ -115,7 +115,7 @@ enabledLunarianDefaultTrades = true
 	maxBlockChecks = 6000
 	#How often the oxygen loader checks if the structure is sealed. Performing this operation too often can kill server TPS, so be wary.
 	#Range: 0 ~ 500
-	refreshTicks = 600
+	refreshTicks = 500
 	#Increases the oxygen requirements as the distributor covers more blocks.
 	oxygenMultiplier = 1.0
 	#Increases the energy requirements as the distributor covers more blocks.
