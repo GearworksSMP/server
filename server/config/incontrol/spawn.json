@@ -12,7 +12,13 @@
       "ad_astra:moon",
       "ad_astra:mercury",
       "alexsmobs:venus",
-      "uberswe:terra"
+      "uberswe:terra",
+      "ad_astra:earth_orbit",
+      "ad_astra:mars_orbit",
+      "ad_astra:moon_orbit",
+      "ad_astra:mercury_orbit",
+      "alexsmobs:venus_orbit",
+      "uberswe:terra_orbit"
     ],
     "onjoin": true,
     "result": "deny"
