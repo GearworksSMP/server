@@ -8,7 +8,7 @@
 # Uncomment the next line to set it.
 -XX:+UseG1GC
 -Xms16G
--Xmx16G
+-Xmx32G
 -server
 -Dsun.rmi.dgc.server.gcInterval=600000
 -XX:+UnlockExperimentalVMOptions
