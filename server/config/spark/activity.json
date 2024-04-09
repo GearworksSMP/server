@@ -5,6 +5,19 @@
       "name": "uberswe",
       "uniqueId": "eacc6702-0fe8-4ef2-9143-72d34c5c423e"
     },
+    "time": 1712652350734,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/lUyyePDqe4"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "uberswe",
+      "uniqueId": "eacc6702-0fe8-4ef2-9143-72d34c5c423e"
+    },
     "time": 1711748075325,
     "type": "Profiler (live)",
     "data": {
