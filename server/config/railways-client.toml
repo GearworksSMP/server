@@ -1,8 +1,0 @@
-# Automatically written by a converter
-[client]
-useConductorSpyShader = true
-showExtendedCouplerDebug = false
-skipClientDerailing = false
-[client.journeymap]
-updateRate = 1
-removeObsoleteRate = 200
