@@ -6,6 +6,7 @@ This is the repo that manages the Gearworks SMP
 - https://github.com/YouHaveTrouble/minecraft-optimization?tab=readme-ov-file
 - https://www.curseforge.com/minecraft/mc-mods/antixray
 - https://serverside.infra.link/
+- https://www.setup.md/docs
 
 ## Server side mods
 - https://modrinth.com/mod/vmp-fabric
